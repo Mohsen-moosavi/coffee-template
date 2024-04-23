@@ -1,0 +1,12 @@
+/* sayeh */
+
+@font-face {
+    font-family: 'sayeh1';
+    src: url(./../fonts/sayeh-1.TTF) format(truetype);
+}
+
+
+@font-face {
+    font-family: 'sayeh2';
+    src: url(./../fonts/sayeh-2.TTF) format(truetype);
+}

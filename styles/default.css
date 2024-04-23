@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    background-color: var(--body-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: all ease 300ms;
+    color: var(--light-color);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+
+
+/* ul{
+    list-style-type: none;
+} */
