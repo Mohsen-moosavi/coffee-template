@@ -11,7 +11,11 @@ html{
 body{
     font-size: 1.6rem;
     font-family: var(--main-font);
-    background-color: var(--body-color);
+    /* background-color: #97523933; */
+    background-image: url(./../images/body-background.jpg);
+    background-position: center top;
+    background-size: contain;
+
 }
 
 a{
@@ -24,6 +28,10 @@ a{
 
 a:hover{
     color: var(--primary-color);
+}
+
+section{
+    margin: 6rem 0;
 }
 
 

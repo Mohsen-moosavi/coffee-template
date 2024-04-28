@@ -22,3 +22,21 @@
     margin-bottom: 3rem;
     font-weight: 800;
 }
+
+.section-btn {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.section-btn__link {
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    padding: 0 1rem;
+}
+
+.section-btn__link:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
