@@ -1,0 +1,317 @@
+/* <== start header ===> */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--dark-color);
+    transition: var(--transition);
+}
+
+.header--whithout-background {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0) 30%);
+}
+
+.menu {
+    gap: 3rem;
+}
+
+.header__content {
+    height: 7rem;
+}
+
+.header__menu {
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.header__menu-icon {
+    display: none;
+    font-size: 4rem;
+    color: var(--light-color);
+}
+
+.menu__link {
+    font-size: 3rem;
+    color: var(--light-color);
+}
+
+.header__menu--open {
+    right: 0 !important;
+}
+
+.header__close-menu-icon {
+    display: none;
+}
+
+.header__mobile-menu-logo {
+    display: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.header__mobile-menu-logo-text {
+    font-size: 3rem !important;
+}
+
+.menu-item--has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    border-radius: var(--border-radius);
+    background-color: rgba(29, 5, 5, 0.9);
+    box-shadow: 0 0 2rem -.5rem rgba(255, 255, 255, 0.3);
+    transition: var(--transition);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.submenu__link {
+    text-wrap: nowrap;
+    font-size: 2rem;
+}
+
+.logo__text,
+.header__mobile-menu-logo-text {
+    font-size: 5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 1rem var(--primary-color);
+}
+
+.submenu__icon::before {
+    color: var(--light-color);
+    transition: var(--transition);
+}
+
+.menu-item--has-submenu:hover .submenu__icon::before {
+    transform: rotate(-90deg);
+    color: var(--primary-color);
+}
+
+.menu-item--has-submenu:hover .submenu {
+    pointer-events: all;
+    transform: translateY(1rem);
+    opacity: 1;
+}
+
+.header__shadow-menu {
+    position: fixed;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -100;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: var(--transition);
+}
+
+.header__shadow-menu--show {
+    opacity: 1 !important;
+    z-index: 100;
+}
+
+/* <== end header ===> */
+
+/* main */
+.main {
+    padding-top: 4rem;
+}
+
+/* main */
+
+/* start product-details */
+
+.product-details {
+    font-family: var(--text-font);
+}
+
+.product-details__title {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+}
+
+.product-details__score {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+
+.product-details__price {
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+.product-details__short-description-wrapper {
+    margin-top: 3rem;
+}
+
+.product-details__short-description-title {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.product-details__short-description {
+    font-size: 2.3rem;
+    color: var(--light-color);
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.product-details__sub-details {
+    margin-top: 3rem;
+    border-top: 2px solid var(--primary-color);
+    justify-content: start;
+    gap: 2rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+
+.product-details__sub-detail-key {
+    color: var(--primary-color);
+}
+
+.product-details__sub-detail-value {
+    color: var(--secondary-color);
+}
+
+.product-details__order {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5rem;
+}
+
+.product-details__order-count {
+    gap: 1.5rem;
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.product-details__order-count-plus,
+.product-details__order-count-minus {
+    border: none;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    transition: var(--transition);
+}
+
+.product-details__add-to-card,
+.product-details__add-to-bag {
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.product-details__add-to-bag{
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.product-details__add-to-bag-icon,
+.product-details__add-to-card-icon {
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+
+.product-details__add-to-bag:hover,
+.product-details__add-to-card:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.product-details__add-to-bag:hover .product-details__add-to-bag-icon,
+.product-details__add-to-card:hover .product-details__add-to-card-icon {
+    color: var(--light-color);
+}
+
+.product-details__order-count-plus:hover,
+.product-details__order-count-minus:hover {
+    opacity: 0.8;
+}
+
+.product-details__img {
+    width: 100%;
+}
+
+/* end product-details */
+
+
+
+
+/* <== start footer ==> */
+.footer {
+    background: url(./../../images/footer-background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 4rem;
+}
+
+.footer__content {
+    padding-bottom: 3rem;
+}
+
+.footer-item__title {
+    display: inline-block;
+    font-size: 3rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-item__text {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-item__icon {
+    color: var(--primary-color);
+}
+
+.footer-item__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-item__link {
+    font-size: 2rem;
+    font-family: var(--text-font);
+    color: var(--primary-color);
+}
+
+.footer-item__img {
+    width: 100%;
+}
+
+.footer__bottom {
+    padding: 2rem 0;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.footer__copy-right {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+/* <== end footer ==> */
