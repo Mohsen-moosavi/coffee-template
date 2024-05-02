@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./vendor/bootstap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/main.css">
@@ -10,6 +12,7 @@
     <link rel="stylesheet" href="./index-responsive.css">
     <title>Product details</title>
 </head>
+
 <body dir="rtl">
     <header class="header">
         <div class="container">
@@ -99,7 +102,10 @@
                         <div class="product-details__short-description-wrapper">
                             <span class="product-details__short-description-title">درباره محصول:</span>
                             <p class="product-details__short-description">
-                                کاپوچینو بدون قند یکی از سالم ترین نوشیدنی های گرمی است که شما می توانید تجربه کنید. با توجه به طعم بسیار خوب این نوشیدنی، می توانید لحظات بسیار زیبا و خاطره انگیزی را در کنار هم دیگر تجره کنید. با اینکه این محصول قند بسیار کمی دارد، اما کاملا مزه دلچسب و بی نظیری دارد که که از این نظر با همتا های قند دار خود برابری می کند.
+                                کاپوچینو بدون قند یکی از سالم ترین نوشیدنی های گرمی است که شما می توانید تجربه کنید. با
+                                توجه به طعم بسیار خوب این نوشیدنی، می توانید لحظات بسیار زیبا و خاطره انگیزی را در کنار
+                                هم دیگر تجره کنید. با اینکه این محصول قند بسیار کمی دارد، اما کاملا مزه دلچسب و بی نظیری
+                                دارد که که از این نظر با همتا های قند دار خود برابری می کند.
                             </p>
                         </div>
                         <div class="product-details__sub-details flex-between-center">
@@ -136,10 +142,288 @@
                 </div>
             </div>
         </section>
+
+        <section class="product-tabs">
+            <div class="container">
+                <ul class="product-nav">
+                    <li class="product-nav__item product-nav__item--active">
+                        <span class="product-nav__link" data-item="1">توضیحات</span>
+                    </li>
+                    <li class="product-nav__item">
+                        <span class="product-nav__link" data-item="2">اطلاعات بیشتر</span>
+                    </li>
+                    <li class="product-nav__item">
+                        <span class="product-nav__link" data-item="3">نظرات</span>
+                    </li>
+                </ul>
+                <div class="product-tabs__details">
+                    <div class="product-tabs__item product-tabs__item--active">
+                        <p class="product-tabs__complete-description">
+                            کاپوچینو بدون قند یکی از سالم ترین نوشیدنی های گرمی است که شما می توانید تجربه کنید. با توجه
+                            به طعم بسیار خوب این نوشیدنی، می توانید لحظات بسیار زیبا و خاطره انگیزی را در کنار هم دیگر
+                            تجره کنید. با اینکه این محصول قند بسیار کمی دارد، اما کاملا مزه دلچسب و بی نظیری دارد که که
+                            از این نظر با همتا های قند دار خود برابری می کند.
+                            کاپوچینو بدون قند یکی از سالم ترین نوشیدنی های گرمی است که شما می توانید تجربه کنید. با توجه
+                            به طعم بسیار خوب این نوشیدنی، می توانید لحظات بسیار زیبا و خاطره انگیزی را در کنار هم دیگر
+                            تجره کنید. با اینکه این محصول قند بسیار کمی دارد، اما کاملا مزه دلچسب و بی نظیری دارد که که
+                            از این نظر با همتا های قند دار خود برابری می کند.
+                            کاپوچینو بدون قند یکی از سالم ترین نوشیدنی های گرمی است که شما می توانید تجربه کنید. با توجه
+                            به طعم بسیار خوب این نوشیدنی، می توانید لحظات بسیار زیبا و خاطره انگیزی را در کنار هم دیگر
+                            تجره کنید. با اینکه این محصول قند بسیار کمی دارد، اما کاملا مزه دلچسب و بی نظیری دارد که که
+                            از این نظر با همتا های قند دار خود برابری می کند.
+                        </p>
+                    </div>
+                    <div class="product-tabs__item">
+                        <table class="table product-tabs__table">
+                            <tbody class="product-tabs__body">
+                                <tr>
+                                    <td class="product-tabs__key">وزن</td>
+                                    <td class="product-tabs__value">12 گرم</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-tabs__key">میزان بو</td>
+                                    <td class="product-tabs__value">متوسط</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-tabs__key">مناسب برای</td>
+                                    <td class="product-tabs__value">عموم افراد</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="product-tabs__item">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="product-tabs__comments flex-column-center-start">
+                                    <div class="product-comment">
+                                        <div class="product-comment__head">
+                                            <img src="./images/shahin.jpg" class="product-comment__img" alt="user">
+                                            <div class="product-comment__comment-info">
+                                                <span class="product-comment__user-name">شاهین مرادی</span>
+                                                <span class="product-comment__comment-date">1403/01/05</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-comment__body">
+                                            <p class="product-comment__comment-body">
+                                                این قهوه مزه و بوی بسیار خوبی داشت. من که واقعا راضی بودم.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-comment">
+                                        <div class="product-comment__head">
+                                            <img src="./images/shahin.jpg" class="product-comment__img" alt="user">
+                                            <div class="product-comment__comment-info">
+                                                <span class="product-comment__user-name">رضا اسدی</span>
+                                                <span class="product-comment__comment-date">1403/02/24</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-comment__body">
+                                            <p class="product-comment__comment-body">
+                                                هیچ فرقی با قهوه های معمولی نداره. فقط اسمش رو گذاشتن بدون فند تا آدم با
+                                                عذاب وجدان کم تری بخوره.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-comment">
+                                        <div class="product-comment__head">
+                                            <img src="./images/shahin.jpg" class="product-comment__img" alt="user">
+                                            <div class="product-comment__comment-info">
+                                                <span class="product-comment__user-name">محمد معراج جمالی</span>
+                                                <span class="product-comment__comment-date">1403/02/02</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-comment__body">
+                                            <p class="product-comment__comment-body">
+                                                خیلی خوب بود. اما بوی خیلی زیادی داشت. اما در کل خوب بود.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product-comment">
+                                        <div class="product-comment__head">
+                                            <img src="./images/shahin.jpg" class="product-comment__img" alt="user">
+                                            <div class="product-comment__comment-info">
+                                                <span class="product-comment__user-name">امیر حق جانلی</span>
+                                                <span class="product-comment__comment-date">1403/02/27</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-comment__body">
+                                            <p class="product-comment__comment-body">
+                                                یکی از بی کیفیت ترین محصولاتی که از این سایت خریداری کردم. واقعا بد بود.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="product-tabs__add-comment">
+                                    <textarea rows="20" class="product-tabs__textarea"
+                                        placeholder="لطفا نظر خود را بنویسید..."></textarea>
+                                    <input type="submit" value="ارسال نظر" class="product-tabs__send-btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-product">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <h4 class="related-product__title section-title">محصولات مرتبط</h4>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
-    
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -151,7 +435,8 @@
                             <ul class="footer-item__menu">
                                 <li class="footer-item__item">
                                     <i class="bi bi-map-fill footer-item__icon"></i>
-                                    <a href="#" class="footer-item__link">تهران. شریف آباد . شهرک صنعتی خوارزمی فاز 2 . بلوار بهارستان. خیابان ماگنولیا بلوک آ117</a>
+                                    <a href="#" class="footer-item__link">تهران. شریف آباد . شهرک صنعتی خوارزمی فاز 2 .
+                                        بلوار بهارستان. خیابان ماگنولیا بلوک آ117</a>
                                 </li>
                                 <li class="footer-item__item">
                                     <i class="bi bi-telephone-fill footer-item__icon"></i>
@@ -217,5 +502,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./product-details.js"></script>
 </body>
+
 </html>
