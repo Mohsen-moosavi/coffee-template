@@ -1,5 +1,6 @@
 @media (max-width : 992px) {
 
+    /* <==================== start main page ====================> */
     /* <== start header ==> */
     .menu__link {
         font-size: 2rem;
@@ -40,10 +41,25 @@
 
     /* <== end promot ==> */
 
+    /* <==================== end main page ====================> */
+
+    /* <==================== start details page ====================> */
+
+    /* <== start product-details ==> */
+    .product-details__title,
+    .product-details__price {
+        font-size: 3rem;
+    }
+
+    /* <== end product-details ==> */
+
+    /* <==================== end details page ====================> */
 
 }
 
 @media (max-width : 768px) {
+
+    /* <==================== start main page ====================> */
 
     /* <== start header ==> */
 
@@ -102,10 +118,32 @@
     .publicity__details {
         padding-top: 2rem;
     }
+
+    /* <==================== end main page ====================> */
+
+    /* <==================== start details page ====================> */
+
+    /* <== start product-details ==> */
+    .product-details__title,
+    .product-details__price {
+        font-size: 3rem;
+    }
+
+    .product-details__short-description-title,
+    .product-details__short-description {
+        font-size: 2rem;
+    }
+
+
+    /* <== end product-details ==> */
+
+    /* <==================== end details page ====================> */
+
 }
 
 @media (max-width : 576px) {
 
+    /* <==================== end main page ====================> */
     /* <== start landing ==> */
     .landing {
         background-position: left;
@@ -162,41 +200,6 @@
 
     /* <== end promot and publicity ==> */
 
-    /*<=== start breadcrum ===>*/
-    .breadcrumb * {
-        font-size: 2rem;
-    }
-
-    .breadcrumb__content {
-        padding: 0.8rem 1.5rem;
-    }
-
-    .breadcrumb__icon{
-        font-size: 1rem;
-    }
-
-    .breadcrumb__home-content-icon {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-    /*<=== end breadcrum ===>*/
-
-    /* <== start pagination ==> */
-
-    .pagination__content{
-        gap: 0.5rem;
-    }
-
-    .pagination__btn{
-        width: 3rem;
-        height: 3rem;
-        border-radius: 0.5rem;
-        font-size: 2rem;
-    }
-
-    /* <== end pagination ==> */
-
     /* <== start footer ==> */
     .footer__copy-right {
         font-size: 1rem;
@@ -218,5 +221,127 @@
         font-size: 2.5rem;
     }
 
-}
+    /* <==================== end main page ====================> */
 
+    /* <==================== start all products ====================> */
+
+    /*<=== start breadcrum ===>*/
+    .breadcrumb * {
+        font-size: 2rem;
+    }
+
+    .breadcrumb__content {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .breadcrumb__icon {
+        font-size: 1rem;
+    }
+
+    .breadcrumb__home-content-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    /*<=== end breadcrum ===>*/
+
+    /* <== start pagination ==> */
+
+    .pagination__content {
+        gap: 0.5rem;
+    }
+
+    .pagination__btn {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+    }
+
+    /* <== end pagination ==> */
+
+    /* <==================== end all products ====================> */
+
+    /* <==================== start details page ====================> */
+    .product-details {
+        margin-top: 1rem;
+    }
+
+    .product-details__cover {
+        padding: 3rem 0 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .product-details__img {
+        max-width: 25rem;
+    }
+
+    .product-details__img-circle {
+        display: block;
+    }
+
+    .product-details__main-info,
+    .product-details__order {
+        flex-wrap: wrap;
+    }
+
+    .product-details__main-info-wrapper {
+        width: 100%;
+    }
+
+
+    .product-details__score {
+        margin-top: 1rem;
+        padding-right: 0.5rem;
+        font-size: 1.4rem;
+    }
+
+    .product-details__title,
+    .product-details__price {
+        font-size: 2.5rem;
+    }
+
+    .product-details__short-description-wrapper,
+    .product-details__sub-details {
+        margin-top: 1.5rem;
+    }
+
+    .product-details__short-description-title {
+        font-size: 2.5rem;
+    }
+
+    .product-details__order-count,
+    .product-details__add-to-card,
+    .product-details__add-to-bag {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .product-details__order-count-plus,
+    .product-details__order-count-minus {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .product-details__add-to-card,
+    .product-details__add-to-bag {
+        height: 4rem;
+        line-height: 3rem;
+    }
+
+    .product-details__add-to-bag {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .product-tabs__complete-description {
+        font-size: 2rem;
+    }
+
+    .product-tabs__textarea{
+        height: 30rem;
+    }
+
+    /* <==================== end details page ====================> */
+
+}
