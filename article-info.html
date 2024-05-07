@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootstap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/app/article-info.css">
+    <link rel="stylesheet" href="./index-responsive.css">
+    <title>Document</title>
+</head>
+
+<body dir="rtl">
+    <header class="header">
+        <div class="container">
+            <div class="header__content flex-between-center">
+                <div class="header__menu">
+                    <div class="header__mobile-menu-logo">
+                        <span class="header__mobile-menu-logo-text">قهوه چی</span>
+                    </div>
+                    <div class="header__close-menu-btn">
+                        <i class="bi bi-x-lg header__close-menu-icon"></i>
+                    </div>
+                    <ul class="menu flex-between-center">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">صفحه اصلی</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">فروشگاه</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">وبلاگ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">تماس با ما</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">درباره ما</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">قوانین</a>
+                        </li>
+                        <li class="menu__item menu-item--has-submenu">
+                            <a href="#" class="menu__link">حساب کاربری</a>
+                            <i class="bi bi-caret-left-fill submenu__icon"></i>
+                            <ul class="submenu flex-column-center-start">
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">سفارشات</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">تیکت های پشتیبانی</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">کامنت ها</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">علاقه مندی ها</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">جرئیات حساب کاربری</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__menu-btn">
+                    <i class="bi bi-list header__menu-icon"></i>
+                </div>
+                <div class="logo">
+                    <h5 class="logo__text">قهوه چی</h5>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb__content">
+                <div class="breadcrumb__home-content-icon">
+                    <i class="bi bi-house-door-fill breadcrumb__home-icon"></i>
+                </div>
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">
+                            خانه
+                            <i class="bi bi-chevron-left breadcrumb__icon"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">
+                            مقالات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main class="articleInfo-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="article">
+                        <h1 class="article__title">
+                            مصرف قهوه به همراه شیر برای کاهش التهاب
+                        </h1>
+                        <div class="article__header">
+                            <div class="article-header__category article-header__item">
+                                <i class="bi bi-folder article-header__icon"></i>
+                                <a href=# class="article-header__text">
+                                    کافه چی
+                                </a>
+                            </div>
+                            <div class="article-header__category article-header__item">
+                                <i class="bi bi-person article-header__icon"></i>
+                                <span class="article-header__text"> ارسال شده توسط سید محسن موسوی ساعی</span>
+                            </div>
+                            <div class="article-header__category article-header__item">
+                                <i class="bi bi-eye-fill article-header__icon"></i>
+                                <span class="article-header__text">تاریخ انتشار: 22/11/1402</span>
+                            </div>
+                        </div>
+                        <img src='./images/articles/article1.jpg' alt="Article Cover" class="article__banner" />
+
+                        <div class="article__score">
+                            <div class="article__score-icons">
+                                <i class="bi bi-star-fill article-header__icon"></i>
+                                <i class="bi bi-star-fill article-header__icon"></i>
+                                <i class="bi bi-star-fill article-header__icon"></i>
+                                <i class="bi bi-star-fill article-header__icon"></i>
+                                <i class="bi bi-star-fill article-header__icon"></i>
+                            </div>
+                            <span class="article__score-text">4.2/5 - (5 امتیاز)</span>
+                        </div>
+
+                        <div class="article-section">
+                            <h2 class="article-section__title">ترکیب شیر قهوه برای مقابله با التهاب</h2>
+                            <p class="paragraph article-section__text">
+                                پلی فنول ها گروهی از مولکول های موجود در گیاهان و غذاهای مشتق شده از گیاه هستند که به
+                                دلیل فعالیت آنتی اکسیدانی خود دارای طیف وسیعی از مزایای سلامتی شناخته شده هستند. شناخته
+                                شده است که آنها با آمینو اسیدها , بلوک های ساختمانی پروتئین - که در غذاها نیز وجود
+                                دارند، متصل می شوند و می توانند اثرات آنتی اکسیدانی آنها را افزایش دهند.مطالعات قبلی به
+                                تأثیر اتصال پلی فنل با پروتئین های موجود در گوشت پرداخته اند. اکنون تیمی از محققان نشان
+                                داده اند که وقتی پلی فنول های موجود در قهوه با اسید آمینه موجود در شیر پیوند می خورند،
+                                اثرات آنتی اکسیدانی و ضد التهابی در سلول های موش در شرایط آزمایشگاهی افزایش می یابد. یکی
+                                از دلایلی که چرا غذاهای گیاهی ممکن است برخی از فواید سلامتی مانند محافظت در برابر سرطان،
+                                بیماری عروق کرونر قلب و التهاب را ارائه دهند، وجود پلی فنول ها است. با این حال،
+                                پلی‌فنول‌ها می‌توانند با ماکروفاژها تعامل داشته باشند و فعالیت آن‌ها را تغییر دهند، که
+                                تصور می‌شود در پس خواص سلامتی آنها قرار دارد. یک گروه از محققان دانشگاه کپنهاگ، دانمارک،
+                                قبلاً به تأثیر اتصال پلی فنل به پروتئین های موجود در محصولات گوشتی، شیر و آبجو پرداختند.
+                                اخیراً آنها تصمیم گرفتند در مورد قهوه تحقیق کنند. آخرین تحقیقات آنها به دنبال توضیح این
+                                بود که چگونه اتصال این پلی فنل خاص با اسید آمینه سیستئین بر اثر مهاری آن بر التهاب در
+                                سلول ها تأثیر می گذارد. آنها نتایج خود را در مجله شیمی کشاورزی و مواد غذایی منتشر کردند.
+                                نویسنده اصلی پروفسور ماریان نیسن لوند به ما توضیح داد که چرا آنها تصمیم گرفتند این پیوند
+                                را بررسی کنند. او گفت: ما پیش از این دریافتیم که پلی‌فنول‌ها با پروتئین‌های موجود در
+                                انواع مختلف غذاها، از جمله محصولات گوشتی، عصاره گیاهی اضافه شده مانند ادویه‌ها، شیر،
+                                عصاره چای سبز اضافه شده و آبجو واکنش نشان می‌دهند. دلیل شروع بررسی پلی فنل های قهوه به
+                                این دلیل است که این پلی فنول ها ساختار ساده تری نسبت به نمونه هایی که در چای سبز یافت می
+                                شوند، دارند، بنابراین زمانی که ما نیاز به انجام آنالیزهای شیمیایی خود داریم کار با آنها
+                                کمی آسان تر است. ثابت کند که آنها واقعاً در غذاها وجود دارند.
+                            </p>
+                            <img src="./images/articles/article2.jpg" alt="article body img"
+                                class="article-section__img" />
+                        </div>
+                        <div class="article-section">
+                            <h3 class="article-section__title">
+                                نحوه تعامل پلی فنل ها با شیر
+                            </h3>
+                            <p class="paragraph article-section__text">پلی فنول ها فراوان ترین منبع آنتی اکسیدان ها در
+                                رژیم غذایی ما هستند و تصور می شود استرس اکسیداتیو در بدن را که به طور طبیعی اتفاق می
+                                افتد، کاهش می دهند. با این حال، آنها همچنین به مقابله با روند پیری کمک می کنند و ضد
+                                التهاب هستند. تصور می‌شود که این اثر زمانی رخ می‌دهد که پلی فنول‌ها استرس اکسیداتیو را
+                                کاهش می‌دهند، که می‌تواند به کاهش التهاب و در نتیجه پیری کمک کند. قهوه منبع پلی فنول ها
+                                از جمله اسید کافئیک است که در آرد آفتابگردان نیز یافت می شود. شناخته شده است که
+                                اکسیداسیون لیپوپروتئین را مهار می کند، زیرا مانند کلسترول عمل می کند زیرا چسبنده است و
+                                می تواند رگ های خونی را باریک و مسدود کند. تصور می شود که مهار اکسیداسیون لیپوپروتئین
+                                این اثر را مهار می کند، بنابراین خطر ابتلا به بیماری های قلبی عروقی را کاهش می دهد. دکتر
+                                عادل مقبول از کالج پزشکی علامه اقبال در لاهور پاکستان که در این مطالعه شرکت نداشت، گفت:
+                                تحقیقات قبلی نشان داده است که پلی فنول ها می توانند به کاهش پاسخ ایمنی در افرادی که به
+                                شیر حساس هستند کمک کند. او به مدیکال نیوز تودی گفت: شواهدی وجود دارد که نشان می دهد
+                                ترکیب پلی فنول ها، ترکیبات طبیعی موجود در برخی از غذاهای گیاهی خاص، با محصولات لبنی ممکن
+                                است به کاهش پاسخ ایمنی در افراد مبتلا به عدم تحمل لاکتوز یا کازئین کمک کند. او افزود:
+                                مکانیسم‌های دقیق پشت این تعامل هنوز به طور کامل شناخته نشده است، اما اعتقاد بر این است
+                                که پلی فنول‌ها ممکن است با کاهش التهاب به کاهش پاسخ ایمنی کمک کنند.</p>
+                        </div>
+                        <div class="article-section">
+                            <h4 class="article-section__title">
+                                حساسیت یا حساسیت به لبنیات
+                            </h4>
+                            <p class="paragraph article-section__text">دو دلیل وجود دارد که چرا ممکن است فردی نسبت به
+                                محصولات شیر گاو حساسیت یا آلرژی داشته باشد. افراد ممکن است به دلیل کمبود لاکتاز، آنزیمی
+                                که قند را هضم می کند، به لاکتوز قندی که در شیر وجود دارد عدم تحمل داشته باشند. علت این
+                                امر می تواند ژنتیکی باشد. در همین حال، افرادی که به شیر گاو حساسیت دارند، در مواجهه با
+                                کازئین، پروتئین موجود در شیر، واکنش ایمنی ایجاد می کنند. یکی از اسیدهای آمینه موجود در
+                                شیر، سیستئین است و تاکنون تحقیقات کمی در مورد تأثیر اتصال پلی فنول های موجود در قهوه با
+                                این اسید آمینه انجام شده است.</p>
+                        </div>
+
+                        <div class="article-social-media">
+                            <span class="article-social-media__text">اشتراک گذاری :</span>
+                            <a href="#" class="article-social-media__link">
+                                <FaTelegramPlane class="article-social-media__icon"></FaTelegramPlane>
+                            </a>
+                            <a href="#" class="article-social-media__link">
+                                <FaTwitter class="article-social-media__icon"></FaTwitter>
+                            </a>
+                            <a href="#" class="article-social-media__link">
+                                <FaFacebookF class="article-social-media__icon"></FaFacebookF>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- <CommentTextArea /> -->
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="articles-info">
+
+                        <div class="product-info">
+                            <span class="product-info__products-title">پر فروش ترین محصولات</span>
+                            <ul class="product-info__product-list">
+                                <li class="product-info__product-list-item">
+                                    <a href="#" class="product-info__product-link">
+                                        <img src="./images/products/cappochino-1.png" alt="product Cover"
+                                            class="product-info__product-img" />
+                                        <span class="product-info__product-text">
+                                            قهوه بدون قند
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="product-info__product-list-item">
+                                    <a href="#" class="product-info__product-link">
+                                        <img src="./images/products/cappochino-1.png" alt="product Cover"
+                                            class="product-info__product-img" />
+                                        <span class="product-info__product-text">
+                                            قهوه بدون قند
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="product-info__product-list-item">
+                                    <a href="#" class="product-info__product-link">
+                                        <img src="./images/products/cappochino-1.png" alt="product Cover"
+                                            class="product-info__product-img" />
+                                        <span class="product-info__product-text">
+                                            قهوه بدون قند
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="product-info__product-list-item">
+                                    <a href="#" class="product-info__product-link">
+                                        <img src="./images/products/cappochino-1.png" alt="product Cover"
+                                            class="product-info__product-img" />
+                                        <span class="product-info__product-text">
+                                            قهوه بدون قند
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="article-info">
+                            <span class="article-info__articles-title">مقاله های جدید</span>
+                            <ul class="last-articles__list">
+                                <li class="last-articles__item">
+                                    <a href="#" class="last-articles__link">
+                                        <img src="./images/articles/article1.jpg" alt="article Cover"
+                                            class="article-info__article-img" />
+                                        <span class='article-info__article-text'>
+                                            مصرف قهوه با شیر برای کاهش التهاب
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="last-articles__item">
+                                    <a href="#" class="last-articles__link">
+                                        <img src="./images/articles/article1.jpg" alt="article Cover"
+                                            class="article-info__article-img" />
+                                        <span class='article-info__article-text'>
+                                            مصرف قهوه با شیر برای کاهش التهاب
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="last-articles__item">
+                                    <a href="#" class="last-articles__link">
+                                        <img src="./images/articles/article1.jpg" alt="article Cover"
+                                            class="article-info__article-img" />
+                                        <span class='article-info__article-text'>
+                                            مصرف قهوه با شیر برای کاهش التهاب
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="last-articles__item">
+                                    <a href="#" class="last-articles__link">
+                                        <img src="./images/articles/article1.jpg" alt="article Cover"
+                                            class="article-info__article-img" />
+                                        <span class='article-info__article-text'>
+                                            مصرف قهوه با شیر برای کاهش التهاب
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="last-articles__item">
+                                    <a href="#" class="last-articles__link">
+                                        <img src="./images/articles/article1.jpg" alt="article Cover"
+                                            class="article-info__article-img" />
+                                        <span class='article-info__article-text'>
+                                            مصرف قهوه با شیر برای کاهش التهاب
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="row gy-5">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="footer-item">
+                            <h5 class="footer-item__title">قهوه چی</h5>
+                            <p class="footer-item__text">شرکت فنجان داغ خوارزمی، فروشگاه اینترنتی قهوه چی</p>
+                            <ul class="footer-item__menu">
+                                <li class="footer-item__item">
+                                    <i class="bi bi-map-fill footer-item__icon"></i>
+                                    <a href="#" class="footer-item__link">تهران. شریف آباد . شهرک صنعتی خوارزمی فاز 2 .
+                                        بلوار بهارستان. خیابان ماگنولیا بلوک آ117</a>
+                                </li>
+                                <li class="footer-item__item">
+                                    <i class="bi bi-telephone-fill footer-item__icon"></i>
+                                    <a href="#" class="footer-item__link">پیگیری سفارشات : 02188305827</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2">
+                        <div class="footer-item">
+                            <h5 class="footer-item__title">دسترسی سریع</h5>
+                            <ul class="footer-item__menu">
+                                <li class="footer-item__item">
+                                    <a href="#" class="footer-item__link">فروشگاه</a>
+                                </li>
+                                <li class="footer-item__item">
+                                    <a href="#" class="footer-item__link">مقالات</a>
+                                </li>
+                                <li class="footer-item__item">
+                                    <a href="#" class="footer-item__link">سبد خرید</a>
+                                </li>
+                                <li class="footer-item__item">
+                                    <a href="#" class="footer-item__link">علاقه مندی ها</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2">
+                        <div class="footer-item">
+                            <h5 class="footer-item__title">دسترسی سریع</h5>
+                            <ul class="footer-item__menu">
+                                <li class="footer-item__item">
+                                    <a href="#" class="footer-item__link">تماس با ما</a>
+                                </li>
+                                <li class="footer-item__item">
+                                    <a href="#" class="footer-item__link">درباره ما</a>
+                                </li>
+                                <li class="footer-item__item">
+                                    <a href="#" class="footer-item__link">مقالات</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 gy-5">
+                        <div class="footer-item">
+                            <div class="row justify-content-center">
+                                <div class="col-2 col-lg-4">
+                                    <img src="./images/license1.png" class="footer-item__img" alt="enemad">
+                                </div>
+                                <div class="col-2 col-lg-4">
+                                    <img src="./images/license2.svg" class="footer-item__img" alt="etehadieh">
+                                </div>
+                                <div class="col-2 col-lg-4">
+                                    <img src="./images/license3.png" class="footer-item__img" alt="mellat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy-right">تمام حقوق متعلق است به قهوه چی است | طراحی و اجرا نیلامارکتینگ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
