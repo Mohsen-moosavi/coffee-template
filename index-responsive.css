@@ -55,6 +55,17 @@
 
     /* <==================== end details page ====================> */
 
+    /* <==================== start contact-us ====================> */
+    .contact-us__comment-body{
+        height: 35rem;
+    }
+
+    .googl_map__adress-title{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    /* <==================== end contact-us ====================> */
+
 }
 
 @media (max-width : 768px) {
@@ -359,21 +370,22 @@
         padding-right: 1rem;
     }
 
-    .article__title{
+    .article__title {
         font-size: 1.8rem !important;
     }
 
-    .article__score-icons{
+    .article__score-icons {
         font-size: 1rem !important;
     }
 
-    .article__score{
+    .article__score {
         margin-bottom: 0;
     }
 
-    .article-section{
+    .article-section {
         margin-top: 1.5rem;
     }
+
     .article-section h2,
     .article-section h3,
     .article-section h4,
