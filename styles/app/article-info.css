@@ -316,8 +316,8 @@
 }
 
 .article-social-media__text {
-    font-size: 1.5rem;
-    color: var(--text-color-light);
+    font-size: 2rem;
+    color: var(--primary-color);
 }
 
 .article-social-media__link {
@@ -333,19 +333,27 @@
 }
 
 .product-info__products-title , .article-info__articles-title{
+    display: block;
+    margin-bottom: 1rem;
     color: var(--primary-color);
     font-size: 2.5rem;
     font-family: var(--text-font);
 }
 
+.article-info , .product-info{
+    background-color: #9a5c456e;
+}
+
 .product-info__product-list-item , .last-articles__item{
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--secondary-color);
-    padding: 0.5rem 0;
+    /* border-bottom: 1px solid var(--secondary-color); */
+    box-shadow: 0 0 1rem #000;
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
 }
 
 .last-articles__item{
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
 }
 
 .product-info__product-link , .last-articles__link{
