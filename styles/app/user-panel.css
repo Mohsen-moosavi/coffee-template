@@ -334,4 +334,58 @@ textarea.adresses__input{
     opacity: 0.9;
 }
 /* end popular-product */
+
+/* start user-infos */
+.user-infos__btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-family: var(--text-font);
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+.user-infos__label{
+    opacity: .8;
+}
+
+.user-infos__input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #914301;
+    flex: 1;
+
+}
+
+.user-infos__file-input::-webkit-file-upload-button{
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.user-infos__submit-wrapper{
+    width: 100%;
+    text-align: end;
+}
+
+.user-infos__submit{
+    border: none;
+    width: auto;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 1rem var(--primary-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.user-infos__submit:hover{
+    background-color: #ff7c00;
+}
+
+/* end user-infos */
 /* main */
