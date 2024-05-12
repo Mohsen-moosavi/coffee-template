@@ -96,13 +96,13 @@ body {
     min-height: 100%;
 }
 
-/* start console */
-.console__title{
+.user-panel__title{
     color: var(--dark-color);
     text-shadow: 0 0 1rem var(--dark-color);
     margin-top: 1rem;
 }
 
+/* start console */
 .console__intro , .console__sub-intro{
     font-family: var(--text-font);
     font-size: 2.5rem;
@@ -151,11 +151,6 @@ body {
 /* end console */
 
 /* Start adresses */
-.adresses__title{
-    color: var(--dark-color);
-    text-shadow: 0 0 1rem var(--dark-color);
-    margin-top: 1rem;
-}
 
 .adresses__btn-group{
     display: flex;
@@ -258,4 +253,85 @@ textarea.adresses__input{
     background-color: #ff7c00;
 }
 /* end adresses */
+
+/* start popular-product */
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-self: center;
+    border-radius: var(--border-radius);
+    padding: 2rem 2.5rem;
+    background-color: #0000000b;
+    box-shadow: 0 0 1rem #00000081;
+}
+
+.product-box__cover {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.product-box__img {
+    transition: var(--transition);
+    width: 100%;
+    margin-bottom: -0.6rem;
+}
+
+.product-box:hover .product-box__img {
+    transform: scale(1.1);
+}
+
+.product-box__cover-shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: rgba(220, 119, 24, 0.2);
+}
+
+.product-box__title {
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.product-box__score {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.product-box__star-icon {
+    color: var(--secondary-color);
+}
+
+.product-box__bottom {
+    width: 100%;
+}
+
+.product-box__like-bag {
+    gap: 0.5rem;
+}
+
+.product-box__heart-icon,
+.product-box__like-icon {
+    color: var(--dark-color);
+    opacity: 0.9;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.product-box__price {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    opacity: 0.9;
+}
+/* end popular-product */
 /* main */

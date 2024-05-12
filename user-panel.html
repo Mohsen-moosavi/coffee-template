@@ -88,7 +88,7 @@
 
         <main class="user-panel">
             <!-- <div class="console">
-                <h1 class="console__title section-title">پنل کاربری</h1>
+                <h1 class="console__title section-title user-panel__title">پنل کاربری</h1>
                 <p class="console__intro">سلام <span class="console__user-name">محسن</span> (<span class="console__user-name">محسن</span> نیستید؟ <a href="#" class="console__intro-logout">خارج شوید</a>)</p>
                 <p class="console__sub-intro">از طریق پیشخوان حساب کاربری‌تان، می‌توانید سفارش‌های اخیرتان را مشاهده، آدرس‌های حمل و نقل و صورتحساب‌تان را مدیریت و جزییات حساب کاربری و کلمه عبور خود را ویرایش کنید.</p>
                 <div class="console__quick-link">
@@ -132,20 +132,24 @@
                     </div>
                 </div>
             </div> -->
-            <div class="adresses">
-                <h3 class="adresses__title section-title">آدرس ها</h3>
+            <!-- <div class="adresses">
+                <h3 class="adresses__title section-title user-panel__title">آدرس ها</h3>
                 <div class="adresses__newAdress">
                     <div class="adresses__btn-group">
                         <label for="adresses__input-name-id" class="adresses__label">نام تحویل گیرنده</label>
-                        <input type="text" class="adresses__input" placeholder="نام تحویل گیرنده را وارد کنید..." id="adresses__input-name-id">
+                        <input type="text" class="adresses__input" placeholder="نام تحویل گیرنده را وارد کنید..."
+                            id="adresses__input-name-id">
                     </div>
                     <div class="adresses__btn-group">
                         <label for="adresses__input-phone-id" class="adresses__label">تلفن تحویل گیرنده</label>
-                        <input type="number" class="adresses__input" placeholder="09121234567" id="adresses__input-phone-id">
+                        <input type="number" class="adresses__input" placeholder="09121234567"
+                            id="adresses__input-phone-id">
                     </div>
                     <div class="adresses__btn-group">
                         <label for="adresses__input-adress-id" class="adresses__label">آدرس</label>
-                        <textarea type="text" class="adresses__input" placeholder="لطفا آدرس را به طور دقیق وارد کنید..." id="adresses__input-adress-id"></textarea>
+                        <textarea type="text" class="adresses__input"
+                            placeholder="لطفا آدرس را به طور دقیق وارد کنید..."
+                            id="adresses__input-adress-id"></textarea>
                     </div>
                     <button class="adresses__btn-submit">اضافه کردن آدرس</button>
                 </div>
@@ -175,6 +179,107 @@
                         <span class="adress-box__phone">09122345489</span>
                         <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
                         <i class="bi bi-trash-fill adress-box__trash-icon"></i>
+                    </div>
+                </div>
+            </div> -->
+            <div class="popular-products">
+                <h3 class="popular-products__title section-title user-panel__title">علاقه مندی ها</h3>
+                <div class="row g-sm-5 g-4">
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="product-box">
+                            <div class="product-box__cover">
+                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                <div class="product-box__cover-shadow"></div>
+                            </div>
+                            <span class="product-box__title">قهوه لاته</span>
+                            <div class="product-box__score">
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star product-box__star-icon"></i>
+                            </div>
+                            <div class="product-box__bottom flex-between-center">
+                                <div class="product-box__like-bag flex-between-center">
+                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                    <i
+                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                </div>
+                                <span class="product-box__price">65000 تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="product-box">
+                            <div class="product-box__cover">
+                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                <div class="product-box__cover-shadow"></div>
+                            </div>
+                            <span class="product-box__title">قهوه لاته</span>
+                            <div class="product-box__score">
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star product-box__star-icon"></i>
+                            </div>
+                            <div class="product-box__bottom flex-between-center">
+                                <div class="product-box__like-bag flex-between-center">
+                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                    <i
+                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                </div>
+                                <span class="product-box__price">65000 تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="product-box">
+                            <div class="product-box__cover">
+                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                <div class="product-box__cover-shadow"></div>
+                            </div>
+                            <span class="product-box__title">قهوه لاته</span>
+                            <div class="product-box__score">
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star product-box__star-icon"></i>
+                            </div>
+                            <div class="product-box__bottom flex-between-center">
+                                <div class="product-box__like-bag flex-between-center">
+                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                    <i
+                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                </div>
+                                <span class="product-box__price">65000 تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="product-box">
+                            <div class="product-box__cover">
+                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                <div class="product-box__cover-shadow"></div>
+                            </div>
+                            <span class="product-box__title">قهوه لاته</span>
+                            <div class="product-box__score">
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star-fill product-box__star-icon"></i>
+                                <i class="bi bi-star product-box__star-icon"></i>
+                            </div>
+                            <div class="product-box__bottom flex-between-center">
+                                <div class="product-box__like-bag flex-between-center">
+                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                    <i
+                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                </div>
+                                <span class="product-box__price">65000 تومان</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
