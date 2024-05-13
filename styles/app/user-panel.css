@@ -388,4 +388,57 @@ textarea.adresses__input{
 }
 
 /* end user-infos */
+
+/* start orders */
+.order-box{
+    padding: 2rem 2.5rem;
+    background-color: #0000000b;
+    box-shadow: 0 0 1rem #00000081;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.order-box__cover{
+    max-width:12rem;
+}
+
+.order-box__image{
+    width: 100%;
+}
+
+.order-box__content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    color: var(--dark-color);
+    font-size: 2rem;
+}
+
+.order-box__content-row{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.order-box__detail-wrapper{
+    width: 20rem;
+}
+
+.order-box__detail-wrapper--adress{
+    width: 100%;
+}
+
+.order-box__label{
+    opacity: .7;
+}
+
+.order-box__info{
+    font-family: var(--text-font);
+}
+/* end orders */
 /* main */
