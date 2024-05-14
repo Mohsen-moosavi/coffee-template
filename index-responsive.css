@@ -158,6 +158,54 @@
 
     /* <==================== end article-info page ====================> */
 
+    /* <==================== start user-panel ====================> */
+    /*  start sidebar */
+    .user-panel-sidebar{
+        height: 100vh;
+        top: 0;
+        width: 25rem;
+        right: -25rem;
+        background-color: #351a06;
+        border-radius: 0;
+    }
+
+    .user-panel-sidebar--close .user-panel-sidebar__logo{
+        padding-right: 1rem;
+        font-size: 3rem;
+        line-height: 1.2 !important;
+    }
+
+    .user-panel-sidebar__link:hover , .user-panel-sidebar__back-link:hover{
+        color: var(--primary-color);
+    }
+
+    .user-panel-sidebar__back-links{
+        border-color: var(--light-color);
+    }
+
+    .user-panel-sidebar *{
+        color: var(--light-color);
+    }
+
+    .user-panel-sidebar--close{
+        width: 25rem;
+        right: 0;
+    }
+
+    .user-panel-sidebar__close-btn ,
+    .user-panel-sidebar__shadow{
+        display: block;
+    }
+    /*  end sidebar */
+
+    /* start content */
+    .user-panel-content,
+    .user-panel-content--close{
+        margin-right: 0;
+    }
+    /* end content */
+    /* <==================== end user-panel ====================> */
+
 
 }
 

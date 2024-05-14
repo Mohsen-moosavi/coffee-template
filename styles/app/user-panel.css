@@ -2,6 +2,15 @@ body {
     background: #53260a;
 }
 
+.user-panel-content{
+    margin-right: 31rem;
+    transition: var(--transition);
+}
+
+.user-panel-content--close{
+    margin-right: 6rem;
+}
+
 
 /* start user-panel-form */
 .user-panel__btn-group{
@@ -64,6 +73,21 @@ textarea.user-panel__input{
     border-radius: var(--border-radius);
     box-shadow: 0 0 1rem #eea058cc;
     padding: 1rem;
+    transition: var(--transition);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.5rem 2rem 1fr 8rem;
+    align-content: start;
+}
+
+.user-panel-sidebar *{
+    text-wrap: nowrap;
+}
+
+.user-panel-sidebar--close{
+    width: 5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .user-panel-sidebar__logo {
@@ -72,6 +96,14 @@ textarea.user-panel__input{
     color: var(--dark-color);
     text-shadow: 0 0 1rem var(--dark-color);
     margin: 1rem 0;
+    transition: var(--transition);
+}
+
+.user-panel-sidebar--close .user-panel-sidebar__logo{
+    text-wrap: wrap;
+    font-size: 2rem;
+    width: 3rem;
+    line-height: 0.5 !important;
 }
 
 .user-panel-sidebar__divider-line {
@@ -82,6 +114,8 @@ textarea.user-panel__input{
 
 .user-panel-sidebar__menu {
     gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: start;
 }
 
 .user-panel-sidebar__icon{
@@ -100,23 +134,43 @@ textarea.user-panel__input{
 
 .user-panel-sidebar__back-links{
     width: 28rem;
-    position: absolute;
-    bottom: 2rem;
     gap: 1rem;
     padding-top: 1rem;
     border-top: 2px solid var(--dark-color);
 }
 
+.user-panel-sidebar__close-btn{
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    font-size: 2rem;
+    display: none;
+}
+
+.user-panel-sidebar__shadow{
+    width: calc(100vw - 25rem);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position : fixed;
+    top: 0;
+    left: 100vw;
+    transition: var(--transition);
+    display: none;
+}
+
+.user-panel-sidebar--close .user-panel-sidebar__shadow{
+    left: 0;
+}
 /* end sidebar */
 
 /* start user-panel-header */
 .user-panel-header{
-    margin-right: 31rem;
     margin-top: 2.5vh;
     background-color: #eea058cc;
     border-radius: var(--border-radius);
     box-shadow: 0 0 1rem #eea058cc;
     padding: 1.5rem;
+    justify-content: space-between;
 }
 .user-panel-header__user-infos{
     align-items: end;
@@ -140,7 +194,6 @@ textarea.user-panel__input{
     margin-top: 2rem;
     padding: 1.5rem;
     margin-bottom: 2rem;
-    margin-right: 31rem;
     background-color: #eea058cc;
     border-radius: var(--border-radius);
     box-shadow: 0 0 1rem #eea058cc;

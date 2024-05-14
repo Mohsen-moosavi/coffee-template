@@ -71,471 +71,480 @@
                     </a>
                 </li>
             </ul>
+            <div class="user-panel-sidebar__close-btn">
+                <i class="bi bi-x-lg user-panel-sidebar__close-icon"></i>
+            </div>
+            <div class="user-panel-sidebar__shadow"></div>
         </div>
 
-        <header class="user-panel-header flex-between-center">
-            <div class="user-panel-header__menu-btn">
-                <i class="bi bi-list user-panel-header__menu-icon"></i>
-            </div>
-            <div class="user-panel-header__user-details flex-between-center">
-                <div class="user-panel-header__user-infos flex-column-center-start">
-                    <span class="user-panel-header__user-name">سید محسن موسوی ساعی</span>
-                    <span class="user-panel-header__user-role">کاربر</span>
+        <div class="user-panel-content">
+            <header class="user-panel-header flex-between-center">
+                <div class="user-panel-header__menu-btn">
+                    <i class="bi bi-list user-panel-header__menu-icon"></i>
                 </div>
-                <img src="./images/1.jpg" class="user-panel-header__user-img" alt="user">
-            </div>
-        </header>
-
-        <main class="user-panel">
-            <!-- <div class="console">
-                <h1 class="console__title section-title user-panel__title">پنل کاربری</h1>
-                <p class="console__intro">سلام <span class="console__user-name">محسن</span> (<span class="console__user-name">محسن</span> نیستید؟ <a href="#" class="console__intro-logout">خارج شوید</a>)</p>
-                <p class="console__sub-intro">از طریق پیشخوان حساب کاربری‌تان، می‌توانید سفارش‌های اخیرتان را مشاهده، آدرس‌های حمل و نقل و صورتحساب‌تان را مدیریت و جزییات حساب کاربری و کلمه عبور خود را ویرایش کنید.</p>
-                <div class="console__quick-link">
-                    <div class="row g-5">
-                        <div class="col-4">
-                            <a href="#" class="console__link-box">
-                                <i class="bi bi-geo-alt console__link-box-icon"></i>
-                                <span class="console__link-text">آدرس ها</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" class="console__link-box">
-                                <i class="bi bi-card-checklist console__link-box-icon"></i>
-                                <span class="console__link-text">سفارش ها</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" class="console__link-box">
-                                <i class="bi bi-suit-heart-fill console__link-box-icon"></i>
-                                <span class="console__link-text">لیست علاقه مندی ها</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" class="console__link-box">
-                                <i class="bi bi-person-circle console__link-box-icon"></i>
-                                <span class="console__link-text">جزئیات حساب کاربری</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" class="console__link-box">
-                                <i class="bi bi-ticket-perforated-fill console__link-box-icon"></i>
-                                <span class="console__link-text">تیکت های پشتیبانی</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" class="console__link-box">
-                                <i class="bi bi-box-arrow-right console__link-box-icon"></i>
-                                <span class="console__link-text">خروج از حساب</span>
-                            </a>
-                        </div>
+                <div class="user-panel-header__user-details flex-between-center">
+                    <div class="user-panel-header__user-infos flex-column-center-start">
+                        <span class="user-panel-header__user-name">سید محسن موسوی ساعی</span>
+                        <span class="user-panel-header__user-role">کاربر</span>
                     </div>
+                    <img src="./images/1.jpg" class="user-panel-header__user-img" alt="user">
                 </div>
-            </div> -->
-            <!-- <div class="adresses">
-                <h3 class="adresses__title section-title user-panel__title">آدرس ها</h3>
-                <form class="adresses__newAdress">
-                    <div class="user-panel__btn-group">
-                        <label for="adresses__input-name-id" class="user-panel__label">نام تحویل گیرنده</label>
-                        <input type="text" class="user-panel__input" placeholder="نام تحویل گیرنده را وارد کنید..."
-                            id="adresses__input-name-id">
-                    </div>
-                    <div class="user-panel__btn-group">
-                        <label for="adresses__input-phone-id" class="user-panel__label">تلفن تحویل گیرنده</label>
-                        <input type="number" class="user-panel__input" placeholder="09121234567"
-                            id="adresses__input-phone-id">
-                    </div>
-                    <div class="user-panel__btn-group">
-                        <label for="adresses__input-adress-id" class="user-panel__label">آدرس</label>
-                        <textarea type="text" class="user-panel__input"
-                            placeholder="لطفا آدرس را به طور دقیق وارد کنید..."
-                            id="adresses__input-adress-id"></textarea>
-                    </div>
-                    <button class="user-panel__btn-submit">اضافه کردن آدرس</button>
-                </form>
-                <hr class="adresses__divider">
-                <h5 class="adresses__saved-adresses section-title">آدرس های ثبت شده</h5>
-                <div class="adresses__adress-list">
-                    <div class="adress-box">
-                        <span class="adress-box__name">علیرضا امیدی</span>
-                        <span class="adress-box__phone">09122345489</span>
-                        <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
-                        <i class="bi bi-trash-fill adress-box__trash-icon"></i>
-                    </div>
-                    <div class="adress-box">
-                        <span class="adress-box__name">علیرضا امیدی</span>
-                        <span class="adress-box__phone">09122345489</span>
-                        <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
-                        <i class="bi bi-trash-fill adress-box__trash-icon"></i>
-                    </div>
-                    <div class="adress-box">
-                        <span class="adress-box__name">علیرضا امیدی</span>
-                        <span class="adress-box__phone">09122345489</span>
-                        <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
-                        <i class="bi bi-trash-fill adress-box__trash-icon"></i>
-                    </div>
-                    <div class="adress-box">
-                        <span class="adress-box__name">علیرضا امیدی</span>
-                        <span class="adress-box__phone">09122345489</span>
-                        <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
-                        <i class="bi bi-trash-fill adress-box__trash-icon"></i>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="popular-products">
-                <h3 class="popular-products__title section-title user-panel__title">علاقه مندی ها</h3>
-                <div class="row g-sm-5 g-4">
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="product-box">
-                            <div class="product-box__cover">
-                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                <div class="product-box__cover-shadow"></div>
+            </header>
+    
+            <main class="user-panel">
+                <div class="console">
+                    <h1 class="console__title section-title user-panel__title">پنل کاربری</h1>
+                    <p class="console__intro">سلام <span class="console__user-name">محسن</span> (<span class="console__user-name">محسن</span> نیستید؟ <a href="#" class="console__intro-logout">خارج شوید</a>)</p>
+                    <p class="console__sub-intro">از طریق پیشخوان حساب کاربری‌تان، می‌توانید سفارش‌های اخیرتان را مشاهده، آدرس‌های حمل و نقل و صورتحساب‌تان را مدیریت و جزییات حساب کاربری و کلمه عبور خود را ویرایش کنید.</p>
+                    <div class="console__quick-link">
+                        <div class="row g-xl-5 g-3">
+                            <div class="col-lg-4 col-6">
+                                <a href="#" class="console__link-box">
+                                    <i class="bi bi-geo-alt console__link-box-icon"></i>
+                                    <span class="console__link-text">آدرس ها</span>
+                                </a>
                             </div>
-                            <span class="product-box__title">قهوه لاته</span>
-                            <div class="product-box__score">
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star product-box__star-icon"></i>
+                            <div class="col-lg-4 col-6">
+                                <a href="#" class="console__link-box">
+                                    <i class="bi bi-card-checklist console__link-box-icon"></i>
+                                    <span class="console__link-text">سفارش ها</span>
+                                </a>
                             </div>
-                            <div class="product-box__bottom flex-between-center">
-                                <div class="product-box__like-bag flex-between-center">
-                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                    <i
-                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                </div>
-                                <span class="product-box__price">65000 تومان</span>
+                            <div class="col-lg-4 col-6">
+                                <a href="#" class="console__link-box">
+                                    <i class="bi bi-suit-heart-fill console__link-box-icon"></i>
+                                    <span class="console__link-text">لیست علاقه مندی ها</span>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="product-box">
-                            <div class="product-box__cover">
-                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                <div class="product-box__cover-shadow"></div>
+                            <div class="col-lg-4 col-6">
+                                <a href="#" class="console__link-box">
+                                    <i class="bi bi-person-circle console__link-box-icon"></i>
+                                    <span class="console__link-text">جزئیات حساب کاربری</span>
+                                </a>
                             </div>
-                            <span class="product-box__title">قهوه لاته</span>
-                            <div class="product-box__score">
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star product-box__star-icon"></i>
+                            <div class="col-lg-4 col-6">
+                                <a href="#" class="console__link-box">
+                                    <i class="bi bi-ticket-perforated-fill console__link-box-icon"></i>
+                                    <span class="console__link-text">تیکت های پشتیبانی</span>
+                                </a>
                             </div>
-                            <div class="product-box__bottom flex-between-center">
-                                <div class="product-box__like-bag flex-between-center">
-                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                    <i
-                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                </div>
-                                <span class="product-box__price">65000 تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="product-box">
-                            <div class="product-box__cover">
-                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                <div class="product-box__cover-shadow"></div>
-                            </div>
-                            <span class="product-box__title">قهوه لاته</span>
-                            <div class="product-box__score">
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star product-box__star-icon"></i>
-                            </div>
-                            <div class="product-box__bottom flex-between-center">
-                                <div class="product-box__like-bag flex-between-center">
-                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                    <i
-                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                </div>
-                                <span class="product-box__price">65000 تومان</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="product-box">
-                            <div class="product-box__cover">
-                                <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                <div class="product-box__cover-shadow"></div>
-                            </div>
-                            <span class="product-box__title">قهوه لاته</span>
-                            <div class="product-box__score">
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star-fill product-box__star-icon"></i>
-                                <i class="bi bi-star product-box__star-icon"></i>
-                            </div>
-                            <div class="product-box__bottom flex-between-center">
-                                <div class="product-box__like-bag flex-between-center">
-                                    <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                    <i
-                                        class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                </div>
-                                <span class="product-box__price">65000 تومان</span>
+                            <div class="col-lg-4 col-6">
+                                <a href="#" class="console__link-box">
+                                    <i class="bi bi-box-arrow-right console__link-box-icon"></i>
+                                    <span class="console__link-text">خروج از حساب</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <!-- <div class="user-infos">
-                <h3 class="user-infos__title section-title user-panel__title">مشخصات کاربر</h3>
-                <form action="" class="user-infos__form flex-column-center-start">
-                    <div class="user-infos__btn-group">
-                        <label for="user-infos__input-name-id" class="user-infos__label">نام و نام خانوادگی : </label>
-                        <input type="text" value="سید محسن موسوی" class="user-infos__input" id="user-infos__input-name-id">
-                    </div>
-                    <div class="user-infos__btn-group">
-                        <label for="user-infos__input-username-id" class="user-infos__label">نام کاربری : </label>
-                        <input type="text" value="mohsen.wsx" class="user-infos__input" id="user-infos__input-username-id">
-                    </div>
-                    <div class="user-infos__btn-group">
-                        <label for="user-infos__input-password-id" class="user-infos__label">گذرواژه جدید : </label>
-                        <input type="password" class="user-infos__input" id="user-infos__input-password-id">
-                    </div>
-                    <div class="user-infos__btn-group">
-                        <label for="user-infos__input-repeatPassword-id" class="user-infos__label">تکرار گذرواژه جدید : </label>
-                        <input type="password" class="user-infos__input" id="user-infos__input-repeatPassword-id">
-                    </div>
-                    <div class="user-infos__btn-group">
-                        <label for="user-infos__input-photo-id" class="user-infos__label">عکس پروفایل : </label>
-                        <input type="file" class="user-infos__file-input" id="user-infos__input-photo-id">
-                    </div>
-                    <div class="user-infos__submit-wrapper">
-                        <input type="submit" class="user-infos__submit" value="اعمال تغیرات">
-                    </div>
-                </form>
-            </div> -->
-            <!-- <div class="orders">
-                <h3 class="orders__title section-title user-panel__title">سفارش ها</h3>
-                <div class="orders__wrapper">
-                    <div class="order-box">
-                        <div class="order-box__cover">
-                            <img src="./images/products/cappochino-1.png" class="order-box__image" alt="cover">
+                <!-- <div class="adresses">
+                    <h3 class="adresses__title section-title user-panel__title">آدرس ها</h3>
+                    <form class="adresses__newAdress">
+                        <div class="user-panel__btn-group">
+                            <label for="adresses__input-name-id" class="user-panel__label">نام تحویل گیرنده</label>
+                            <input type="text" class="user-panel__input" placeholder="نام تحویل گیرنده را وارد کنید..."
+                                id="adresses__input-name-id">
                         </div>
-                        <div class="order-box__content">
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">نام محصول :</span>
-                                    <span class="order-box__info">قهوه لاته</span>
-                                </div>
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">قیمت :</span>
-                                    <span class="order-box__info">69,000 تومان</span>
-                                </div>
-                            </div>
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">نام تحویل گیرنده :</span>
-                                    <span class="order-box__info">علی صالحی</span>
-                                </div>
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">شماره تماس :</span>
-                                    <span class="order-box__info">09361231213</span>
-                                </div>
-                            </div>
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper order-box__detail-wrapper--adress">
-                                    <span class="order-box__label">آدرس :</span>
-                                    <span class="order-box__info">تهران، بلوار منتظری، خیابان شهید بهشتی، کوچه 23 
-                                        ، پلاک 12
-                                    </span>
-                                </div>
-                            </div>
+                        <div class="user-panel__btn-group">
+                            <label for="adresses__input-phone-id" class="user-panel__label">تلفن تحویل گیرنده</label>
+                            <input type="number" class="user-panel__input" placeholder="09121234567"
+                                id="adresses__input-phone-id">
+                        </div>
+                        <div class="user-panel__btn-group">
+                            <label for="adresses__input-adress-id" class="user-panel__label">آدرس</label>
+                            <textarea type="text" class="user-panel__input"
+                                placeholder="لطفا آدرس را به طور دقیق وارد کنید..."
+                                id="adresses__input-adress-id"></textarea>
+                        </div>
+                        <button class="user-panel__btn-submit">اضافه کردن آدرس</button>
+                    </form>
+                    <hr class="adresses__divider">
+                    <h5 class="adresses__saved-adresses section-title">آدرس های ثبت شده</h5>
+                    <div class="adresses__adress-list">
+                        <div class="adress-box">
+                            <span class="adress-box__name">علیرضا امیدی</span>
+                            <span class="adress-box__phone">09122345489</span>
+                            <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
+                            <i class="bi bi-trash-fill adress-box__trash-icon"></i>
+                        </div>
+                        <div class="adress-box">
+                            <span class="adress-box__name">علیرضا امیدی</span>
+                            <span class="adress-box__phone">09122345489</span>
+                            <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
+                            <i class="bi bi-trash-fill adress-box__trash-icon"></i>
+                        </div>
+                        <div class="adress-box">
+                            <span class="adress-box__name">علیرضا امیدی</span>
+                            <span class="adress-box__phone">09122345489</span>
+                            <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
+                            <i class="bi bi-trash-fill adress-box__trash-icon"></i>
+                        </div>
+                        <div class="adress-box">
+                            <span class="adress-box__name">علیرضا امیدی</span>
+                            <span class="adress-box__phone">09122345489</span>
+                            <p class="adress-box__adress">تهران، بلوار منتظری، خیابان شهید حیدری، کوچه 23، پلاک 10</p>
+                            <i class="bi bi-trash-fill adress-box__trash-icon"></i>
                         </div>
                     </div>
-                    <div class="order-box">
-                        <div class="order-box__cover">
-                            <img src="./images/products/cappochino-1.png" class="order-box__image" alt="cover">
-                        </div>
-                        <div class="order-box__content">
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">نام محصول :</span>
-                                    <span class="order-box__info">قهوه لاته</span>
+                </div> -->
+                <!-- <div class="popular-products">
+                    <h3 class="popular-products__title section-title user-panel__title">علاقه مندی ها</h3>
+                    <div class="row g-sm-5 g-4">
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
                                 </div>
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">قیمت :</span>
-                                    <span class="order-box__info">69,000 تومان</span>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
                                 </div>
-                            </div>
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">نام تحویل گیرنده :</span>
-                                    <span class="order-box__info">علی صالحی</span>
-                                </div>
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">شماره تماس :</span>
-                                    <span class="order-box__info">09361231213</span>
-                                </div>
-                            </div>
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper order-box__detail-wrapper--adress">
-                                    <span class="order-box__label">آدرس :</span>
-                                    <span class="order-box__info">تهران، بلوار منتظری، خیابان شهید بهشتی، کوچه 23 
-                                        ، پلاک 12
-                                    </span>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="order-box">
-                        <div class="order-box__cover">
-                            <img src="./images/products/cappochino-1.png" class="order-box__image" alt="cover">
-                        </div>
-                        <div class="order-box__content">
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">نام محصول :</span>
-                                    <span class="order-box__info">قهوه لاته</span>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
                                 </div>
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">قیمت :</span>
-                                    <span class="order-box__info">69,000 تومان</span>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
                                 </div>
-                            </div>
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">نام تحویل گیرنده :</span>
-                                    <span class="order-box__info">علی صالحی</span>
-                                </div>
-                                <div class="order-box__detail-wrapper">
-                                    <span class="order-box__label">شماره تماس :</span>
-                                    <span class="order-box__info">09361231213</span>
-                                </div>
-                            </div>
-                            <div class="order-box__content-row">
-                                <div class="order-box__detail-wrapper order-box__detail-wrapper--adress">
-                                    <span class="order-box__label">آدرس :</span>
-                                    <span class="order-box__info">تهران، بلوار منتظری، خیابان شهید بهشتی، کوچه 23 
-                                        ، پلاک 12
-                                    </span>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="tickets">
-                <h3 class="tickets__title section-title user-panel__title">تیکت های پشتیبانی</h3>
-                <form class="tickets__new-ticket">
-                    <div class="user-panel__btn-group">
-                        <label for="adresses__input-name-id" class="user-panel__label">عنوان تیکت</label>
-                        <input type="text" class="user-panel__input" placeholder="عنوان تیکت را وارد کنید..."
-                            id="adresses__input-name-id">
-                    </div>
-                    <div class="user-panel__btn-group">
-                        <label for="adresses__input-adress-id" class="user-panel__label">متن پیغام</label>
-                        <textarea type="text" class="user-panel__input"
-                            placeholder="لطفا متن پیغام را وارد کنید..."
-                            id="adresses__input-adress-id"></textarea>
-                    </div>
-                    <button class="user-panel__btn-submit">ارسال تیکت</button>
-                </form>
-                <div class="tickets__details">
-                    <div class="tickets__detail-item tickets__detail-item--all">
-                        <span class="tickets__detail-label">همه تیکت ها :</span>
-                        <span class="tickets__detail-info">3</span>
-                    </div>
-                    <div class="tickets__detail-item tickets__detail-item--open">
-                        <span class="tickets__detail-label">تیکت های باز :</span>
-                        <span class="tickets__detail-info">1</span>
-                    </div>
-                    <div class="tickets__detail-item tickets__detail-item--close">
-                        <span class="tickets__detail-label">تیکت های بسته شده :</span>
-                        <span class="tickets__detail-info">2</span>
-                    </div>
-                </div>
-                <div class="tickets__ticket-wrapper">
-                    <div class="ticket-box ticket-box--open">
-                        <div class="ticket-box__content">
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">عنوان تیکت :</span>
-                                <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
-                            </div>
-                            <span class="ticket-box__date">22/10/1402</span>
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">متن تیکت :</span>
-                                <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="ticket-box__status"></div>
-                    </div>
-                    <div class="ticket-box ticket-box--close">
-                        <div class="ticket-box__content">
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">عنوان تیکت :</span>
-                                <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
-                            </div>
-                            <span class="ticket-box__date">22/10/1402</span>
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">متن تیکت :</span>
-                                <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
-                            </div>
-                        </div>
-                        <div class="ticket-box__status"></div>
-                    </div>
-                    <div class="ticket-box ticket-box--open">
-                        <div class="ticket-box__content">
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">عنوان تیکت :</span>
-                                <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
-                            </div>
-                            <span class="ticket-box__date">22/10/1402</span>
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">متن تیکت :</span>
-                                <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="ticket-box__status"></div>
                     </div>
-                    <div class="ticket-box ticket-box--close">
-                        <div class="ticket-box__content">
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">عنوان تیکت :</span>
-                                <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
+                </div> -->
+                <!-- <div class="user-infos">
+                    <h3 class="user-infos__title section-title user-panel__title">مشخصات کاربر</h3>
+                    <form action="" class="user-infos__form flex-column-center-start">
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-name-id" class="user-infos__label">نام و نام خانوادگی : </label>
+                            <input type="text" value="سید محسن موسوی" class="user-infos__input" id="user-infos__input-name-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-username-id" class="user-infos__label">نام کاربری : </label>
+                            <input type="text" value="mohsen.wsx" class="user-infos__input" id="user-infos__input-username-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-password-id" class="user-infos__label">گذرواژه جدید : </label>
+                            <input type="password" class="user-infos__input" id="user-infos__input-password-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-repeatPassword-id" class="user-infos__label">تکرار گذرواژه جدید : </label>
+                            <input type="password" class="user-infos__input" id="user-infos__input-repeatPassword-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-photo-id" class="user-infos__label">عکس پروفایل : </label>
+                            <input type="file" class="user-infos__file-input" id="user-infos__input-photo-id">
+                        </div>
+                        <div class="user-infos__submit-wrapper">
+                            <input type="submit" class="user-infos__submit" value="اعمال تغیرات">
+                        </div>
+                    </form>
+                </div> -->
+                <!-- <div class="orders">
+                    <h3 class="orders__title section-title user-panel__title">سفارش ها</h3>
+                    <div class="orders__wrapper">
+                        <div class="order-box">
+                            <div class="order-box__cover">
+                                <img src="./images/products/cappochino-1.png" class="order-box__image" alt="cover">
                             </div>
-                            <span class="ticket-box__date">22/10/1402</span>
-                            <div class="ticket-box__detail-item">
-                                <span class="ticket-box__label">متن تیکت :</span>
-                                <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
+                            <div class="order-box__content">
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">نام محصول :</span>
+                                        <span class="order-box__info">قهوه لاته</span>
+                                    </div>
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">قیمت :</span>
+                                        <span class="order-box__info">69,000 تومان</span>
+                                    </div>
+                                </div>
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">نام تحویل گیرنده :</span>
+                                        <span class="order-box__info">علی صالحی</span>
+                                    </div>
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">شماره تماس :</span>
+                                        <span class="order-box__info">09361231213</span>
+                                    </div>
+                                </div>
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper order-box__detail-wrapper--adress">
+                                        <span class="order-box__label">آدرس :</span>
+                                        <span class="order-box__info">تهران، بلوار منتظری، خیابان شهید بهشتی، کوچه 23 
+                                            ، پلاک 12
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="ticket-box__status"></div>
+                        <div class="order-box">
+                            <div class="order-box__cover">
+                                <img src="./images/products/cappochino-1.png" class="order-box__image" alt="cover">
+                            </div>
+                            <div class="order-box__content">
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">نام محصول :</span>
+                                        <span class="order-box__info">قهوه لاته</span>
+                                    </div>
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">قیمت :</span>
+                                        <span class="order-box__info">69,000 تومان</span>
+                                    </div>
+                                </div>
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">نام تحویل گیرنده :</span>
+                                        <span class="order-box__info">علی صالحی</span>
+                                    </div>
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">شماره تماس :</span>
+                                        <span class="order-box__info">09361231213</span>
+                                    </div>
+                                </div>
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper order-box__detail-wrapper--adress">
+                                        <span class="order-box__label">آدرس :</span>
+                                        <span class="order-box__info">تهران، بلوار منتظری، خیابان شهید بهشتی، کوچه 23 
+                                            ، پلاک 12
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-box">
+                            <div class="order-box__cover">
+                                <img src="./images/products/cappochino-1.png" class="order-box__image" alt="cover">
+                            </div>
+                            <div class="order-box__content">
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">نام محصول :</span>
+                                        <span class="order-box__info">قهوه لاته</span>
+                                    </div>
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">قیمت :</span>
+                                        <span class="order-box__info">69,000 تومان</span>
+                                    </div>
+                                </div>
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">نام تحویل گیرنده :</span>
+                                        <span class="order-box__info">علی صالحی</span>
+                                    </div>
+                                    <div class="order-box__detail-wrapper">
+                                        <span class="order-box__label">شماره تماس :</span>
+                                        <span class="order-box__info">09361231213</span>
+                                    </div>
+                                </div>
+                                <div class="order-box__content-row">
+                                    <div class="order-box__detail-wrapper order-box__detail-wrapper--adress">
+                                        <span class="order-box__label">آدرس :</span>
+                                        <span class="order-box__info">تهران، بلوار منتظری، خیابان شهید بهشتی، کوچه 23 
+                                            ، پلاک 12
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div> -->
-            <div class="single-ticket">
-                <h5 class="single-ticket__title user-infos__title">تاخیر در ارسال محصول</h5>
-                <div class="single-ticket__wrapper">
-                    <div class="single-ticket__user-message">
-                        <p class="single-ticket__message">سلام. محصولی که هفته پیش سفارش داده بودم هنوز به دستم نرسیده</p>
+                </div> -->
+                <!-- <div class="tickets">
+                    <h3 class="tickets__title section-title user-panel__title">تیکت های پشتیبانی</h3>
+                    <form class="tickets__new-ticket">
+                        <div class="user-panel__btn-group">
+                            <label for="adresses__input-name-id" class="user-panel__label">عنوان تیکت</label>
+                            <input type="text" class="user-panel__input" placeholder="عنوان تیکت را وارد کنید..."
+                                id="adresses__input-name-id">
+                        </div>
+                        <div class="user-panel__btn-group">
+                            <label for="adresses__input-adress-id" class="user-panel__label">متن پیغام</label>
+                            <textarea type="text" class="user-panel__input"
+                                placeholder="لطفا متن پیغام را وارد کنید..."
+                                id="adresses__input-adress-id"></textarea>
+                        </div>
+                        <button class="user-panel__btn-submit">ارسال تیکت</button>
+                    </form>
+                    <div class="tickets__details">
+                        <div class="tickets__detail-item tickets__detail-item--all">
+                            <span class="tickets__detail-label">همه تیکت ها :</span>
+                            <span class="tickets__detail-info">3</span>
+                        </div>
+                        <div class="tickets__detail-item tickets__detail-item--open">
+                            <span class="tickets__detail-label">تیکت های باز :</span>
+                            <span class="tickets__detail-info">1</span>
+                        </div>
+                        <div class="tickets__detail-item tickets__detail-item--close">
+                            <span class="tickets__detail-label">تیکت های بسته شده :</span>
+                            <span class="tickets__detail-info">2</span>
+                        </div>
                     </div>
-                    <div class="single-ticket__admin-message">
-                        <p class="single-ticket__message">سلام. بابت تاخیر پیش آمده متاسفیم. حداکثر تا دو روز آینده محصول به دست شما خواهد رسید.</p>
+                    <div class="tickets__ticket-wrapper">
+                        <div class="ticket-box ticket-box--open">
+                            <div class="ticket-box__content">
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">عنوان تیکت :</span>
+                                    <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
+                                </div>
+                                <span class="ticket-box__date">22/10/1402</span>
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">متن تیکت :</span>
+                                    <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
+                                </div>
+                            </div>
+                            <div class="ticket-box__status"></div>
+                        </div>
+                        <div class="ticket-box ticket-box--close">
+                            <div class="ticket-box__content">
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">عنوان تیکت :</span>
+                                    <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
+                                </div>
+                                <span class="ticket-box__date">22/10/1402</span>
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">متن تیکت :</span>
+                                    <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
+                                </div>
+                            </div>
+                            <div class="ticket-box__status"></div>
+                        </div>
+                        <div class="ticket-box ticket-box--open">
+                            <div class="ticket-box__content">
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">عنوان تیکت :</span>
+                                    <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
+                                </div>
+                                <span class="ticket-box__date">22/10/1402</span>
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">متن تیکت :</span>
+                                    <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
+                                </div>
+                            </div>
+                            <div class="ticket-box__status"></div>
+                        </div>
+                        <div class="ticket-box ticket-box--close">
+                            <div class="ticket-box__content">
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">عنوان تیکت :</span>
+                                    <span class="ticket-box__info">طولانی شدن مدت زمان تحویل محصول</span>
+                                </div>
+                                <span class="ticket-box__date">22/10/1402</span>
+                                <div class="ticket-box__detail-item">
+                                    <span class="ticket-box__label">متن تیکت :</span>
+                                    <p class="ticket-box__info ticket-box__info--message">طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول و طولانی شدن مدت زمان تحویل محصول طولانی شدن مدت زمان تحویل محصول و </p>
+                                </div>
+                            </div>
+                            <div class="ticket-box__status"></div>
+                        </div>
                     </div>
-                    <div class="single-ticket__user-message">
-                        <p class="single-ticket__message">تا دو روز دیگه خیلی دیره. سریع تر بفرستید خواهشا...</p>
+                </div> -->
+                <!-- <div class="single-ticket">
+                    <h5 class="single-ticket__title user-infos__title">تاخیر در ارسال محصول</h5>
+                    <div class="single-ticket__wrapper">
+                        <div class="single-ticket__user-message">
+                            <p class="single-ticket__message">سلام. محصولی که هفته پیش سفارش داده بودم هنوز به دستم نرسیده</p>
+                        </div>
+                        <div class="single-ticket__admin-message">
+                            <p class="single-ticket__message">سلام. بابت تاخیر پیش آمده متاسفیم. حداکثر تا دو روز آینده محصول به دست شما خواهد رسید.</p>
+                        </div>
+                        <div class="single-ticket__user-message">
+                            <p class="single-ticket__message">تا دو روز دیگه خیلی دیره. سریع تر بفرستید خواهشا...</p>
+                        </div>
+                        <div class="single-ticket__admin-message">
+                            <p class="single-ticket__message">چشم ارسال محصول شما در اولویت قرار خواهد گرفت.</p>
+                        </div>
                     </div>
-                    <div class="single-ticket__admin-message">
-                        <p class="single-ticket__message">چشم ارسال محصول شما در اولویت قرار خواهد گرفت.</p>
-                    </div>
-                </div>
-                <hr class="single-ticket__divider-line">
-                <form class="single-ticket__answer-form">
-                    <textarea class="user-panel__input single-ticket__answer-text" placeholder="پاسخ خود را بنویسید..."></textarea>
-                    <div class="user-panel__btn-submi-wrapper">
-                        <button class="user-panel__btn-submit">ارسال پاسخ</button>
-                    </div>
-                </form>
-            </div>
-        </main>
+                    <hr class="single-ticket__divider-line">
+                    <form class="single-ticket__answer-form">
+                        <textarea class="user-panel__input single-ticket__answer-text" placeholder="پاسخ خود را بنویسید..."></textarea>
+                        <div class="user-panel__btn-submi-wrapper">
+                            <button class="user-panel__btn-submit">ارسال پاسخ</button>
+                        </div>
+                    </form>
+                </div> -->
+            </main>
+        </div>
     </div>
+
+
+    <script src="./js/user-panel.js"></script>
 </body>
 
 </html>
