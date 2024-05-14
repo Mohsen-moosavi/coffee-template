@@ -56,15 +56,34 @@
     /* <==================== end details page ====================> */
 
     /* <==================== start contact-us ====================> */
-    .contact-us__comment-body{
+    .contact-us__comment-body {
         height: 35rem;
     }
 
-    .googl_map__adress-title{
+    .googl_map__adress-title {
         margin-bottom: 1rem;
         font-size: 2rem;
     }
+
     /* <==================== end contact-us ====================> */
+
+    /* <==================== end user-panel ====================> */
+    /* start content */
+
+    .user-panel-content .product-box__price {
+        font-size: 2rem;
+    }
+
+    .order-box__content {
+        font-size: 1.7rem;
+    }
+
+    .order-box__detail-wrapper {
+        width: 15rem;
+    }
+
+    /* end content */
+    /* <==================== end user-panel ====================> */
 
 }
 
@@ -160,7 +179,7 @@
 
     /* <==================== start user-panel ====================> */
     /*  start sidebar */
-    .user-panel-sidebar{
+    .user-panel-sidebar {
         height: 100vh;
         top: 0;
         width: 25rem;
@@ -169,40 +188,47 @@
         border-radius: 0;
     }
 
-    .user-panel-sidebar--close .user-panel-sidebar__logo{
+    .user-panel-sidebar--close .user-panel-sidebar__logo {
         padding-right: 1rem;
         font-size: 3rem;
         line-height: 1.2 !important;
     }
 
-    .user-panel-sidebar__link:hover , .user-panel-sidebar__back-link:hover{
+    .user-panel-sidebar__link:hover,
+    .user-panel-sidebar__back-link:hover {
         color: var(--primary-color);
     }
 
-    .user-panel-sidebar__back-links{
+    .user-panel-sidebar__back-links {
         border-color: var(--light-color);
     }
 
-    .user-panel-sidebar *{
+    .user-panel-sidebar * {
         color: var(--light-color);
     }
 
-    .user-panel-sidebar--close{
+    .user-panel-sidebar--close {
         width: 25rem;
         right: 0;
     }
 
-    .user-panel-sidebar__close-btn ,
-    .user-panel-sidebar__shadow{
+    .user-panel-sidebar__close-btn,
+    .user-panel-sidebar__shadow {
         display: block;
     }
+
     /*  end sidebar */
 
     /* start content */
     .user-panel-content,
-    .user-panel-content--close{
+    .user-panel-content--close {
         margin-right: 0;
     }
+
+    .user-panel-content .product-box__price {
+        font-size: 1.7rem;
+    }
+
     /* end content */
     /* <==================== end user-panel ====================> */
 
@@ -458,4 +484,49 @@
 
     /* <==================== end article-info page ====================> */
 
+    /* <==================== start user-panel ====================> */
+    /* start content */
+    .order-box {
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+
+    .order-box__cover {
+        margin: 0 auto;
+    }
+
+    .order-box__content {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .order-box__content-row {
+        gap: 1rem;
+    }
+
+    .order-box__detail-wrapper {
+        width: 12rem;
+    }
+
+    .tickets__detail-item {
+        font-size: 1.2rem;
+        padding-right: 1rem;
+    }
+
+    .ticket-box__content {
+        font-size: 1.5rem;
+    }
+
+    .single-ticket__title{
+        font-size: 2rem;
+    }
+
+    .single-ticket__user-message,
+    .single-ticket__admin-message {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    /* end content */
+    /* <==================== end user-panel ====================> */
 }

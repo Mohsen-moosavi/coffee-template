@@ -78,6 +78,7 @@ textarea.user-panel__input{
     grid-template-columns: 1fr;
     grid-template-rows: 4.5rem 2rem 1fr 8rem;
     align-content: start;
+    z-index: 200;
 }
 
 .user-panel-sidebar *{
@@ -312,6 +313,11 @@ textarea.user-panel__input{
 /* end adresses */
 
 /* start popular-product */
+
+.user-panel-content .product-box{
+    padding: 1rem;
+}
+
 .product-box {
     display: flex;
     flex-direction: column;
@@ -406,6 +412,7 @@ textarea.user-panel__input{
 
 .user-infos__label{
     opacity: .8;
+    text-wrap: nowrap;
 }
 
 .user-infos__input{
@@ -459,7 +466,8 @@ textarea.user-panel__input{
 }
 
 .order-box__cover{
-    max-width:12rem;
+    min-width:8rem;
+    width:12rem;
 }
 
 .order-box__image{
@@ -479,6 +487,7 @@ textarea.user-panel__input{
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -487,7 +496,7 @@ textarea.user-panel__input{
 }
 
 .order-box__detail-wrapper--adress{
-    width: 100%;
+    width: 100% !important;
 }
 
 .order-box__label{
