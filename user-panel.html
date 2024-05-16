@@ -21,37 +21,37 @@
             <hr class="user-panel-sidebar__divider-line">
             <ul class="user-panel-sidebar__menu flex-column-center-start">
                 <li class="user-panel-sidebar__item">
-                    <a href="#" class="user-panel-sidebar__link">
+                    <a href="#" class="user-panel-sidebar__link user-panel-sidebar--active" data-link="console-page-id">
                         <i class="bi bi-house-gear-fill user-panel-sidebar__icon"></i>
                         پیشخوان
                     </a>
                 </li>
                 <li class="user-panel-sidebar__item">
-                    <a href="#" class="user-panel-sidebar__link">
+                    <a href="#" class="user-panel-sidebar__link" data-link="adresses-page-id">
                         <i class="bi bi-geo-alt user-panel-sidebar__icon"></i>
                         آدرس ها
                     </a>
                 </li>
                 <li class="user-panel-sidebar__item">
-                    <a href="#" class="user-panel-sidebar__link">
+                    <a href="#" class="user-panel-sidebar__link" data-link="orders-page-id">
                         <i class="bi bi-card-checklist user-panel-sidebar__icon"></i>
                         سفارش ها
                     </a>
                 </li>
                 <li class="user-panel-sidebar__item">
-                    <a href="#" class="user-panel-sidebar__link">
+                    <a href="#" class="user-panel-sidebar__link" data-link="popular-products-page-id">
                         <i class="bi bi-suit-heart-fill user-panel-sidebar__icon"></i>
                         لیست علاقه مندی ها
                     </a>
                 </li>
                 <li class="user-panel-sidebar__item">
-                    <a href="#" class="user-panel-sidebar__link">
+                    <a href="#" class="user-panel-sidebar__link" data-link="user-infos-page-id">
                         <i class="bi bi-person-circle user-panel-sidebar__icon"></i>
                         جزئیات حساب کاربری
                     </a>
                 </li>
                 <li class="user-panel-sidebar__item">
-                    <a href="#" class="user-panel-sidebar__link">
+                    <a href="#" class="user-panel-sidebar__link" data-link="tickets-page-id">
                         <i class="bi bi-ticket-perforated-fill user-panel-sidebar__icon"></i>
                         تیکت های پشتیبانی
                     </a>
@@ -59,7 +59,7 @@
             </ul>
             <ul class="user-panel-sidebar__back-links flex-column-center-start">
                 <li class="user-panel-sidebar__back-link-item">
-                    <a href="#" class="user-panel-sidebar__back-link">
+                    <a href="./index.html" class="user-panel-sidebar__back-link">
                         <i class="bi bi-house-door-fill user-panel-sidebar__icon"></i>
                         صفحه اصلی
                     </a>
@@ -92,7 +92,7 @@
             </header>
     
             <main class="user-panel">
-                <!-- <div class="console">
+                <div class="console" id="console-page-id" >
                     <h1 class="console__title section-title user-panel__title">پنل کاربری</h1>
                     <p class="console__intro">سلام <span class="console__user-name">محسن</span> (<span class="console__user-name">محسن</span> نیستید؟ <a href="#" class="console__intro-logout">خارج شوید</a>)</p>
                     <p class="console__sub-intro">از طریق پیشخوان حساب کاربری‌تان، می‌توانید سفارش‌های اخیرتان را مشاهده، آدرس‌های حمل و نقل و صورتحساب‌تان را مدیریت و جزییات حساب کاربری و کلمه عبور خود را ویرایش کنید.</p>
@@ -136,8 +136,8 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <!-- <div class="adresses">
+                </div>
+                <div class="adresses d-none" id="adresses-page-id">
                     <h3 class="adresses__title section-title user-panel__title">آدرس ها</h3>
                     <form class="adresses__newAdress">
                         <div class="user-panel__btn-group">
@@ -186,137 +186,8 @@
                             <i class="bi bi-trash-fill adress-box__trash-icon"></i>
                         </div>
                     </div>
-                </div> -->
-                <!-- <div class="popular-products">
-                    <h3 class="popular-products__title section-title user-panel__title">علاقه مندی ها</h3>
-                    <div class="row g-4">
-                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
-                            <div class="product-box">
-                                <div class="product-box__cover">
-                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                    <div class="product-box__cover-shadow"></div>
-                                </div>
-                                <span class="product-box__title">قهوه لاته</span>
-                                <div class="product-box__score">
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star product-box__star-icon"></i>
-                                </div>
-                                <div class="product-box__bottom flex-between-center">
-                                    <div class="product-box__like-bag flex-between-center">
-                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                        <i
-                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                    </div>
-                                    <span class="product-box__price">65000 تومان</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
-                            <div class="product-box">
-                                <div class="product-box__cover">
-                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                    <div class="product-box__cover-shadow"></div>
-                                </div>
-                                <span class="product-box__title">قهوه لاته</span>
-                                <div class="product-box__score">
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star product-box__star-icon"></i>
-                                </div>
-                                <div class="product-box__bottom flex-between-center">
-                                    <div class="product-box__like-bag flex-between-center">
-                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                        <i
-                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                    </div>
-                                    <span class="product-box__price">65000 تومان</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
-                            <div class="product-box">
-                                <div class="product-box__cover">
-                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                    <div class="product-box__cover-shadow"></div>
-                                </div>
-                                <span class="product-box__title">قهوه لاته</span>
-                                <div class="product-box__score">
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star product-box__star-icon"></i>
-                                </div>
-                                <div class="product-box__bottom flex-between-center">
-                                    <div class="product-box__like-bag flex-between-center">
-                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                        <i
-                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                    </div>
-                                    <span class="product-box__price">65000 تومان</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
-                            <div class="product-box">
-                                <div class="product-box__cover">
-                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
-                                    <div class="product-box__cover-shadow"></div>
-                                </div>
-                                <span class="product-box__title">قهوه لاته</span>
-                                <div class="product-box__score">
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star-fill product-box__star-icon"></i>
-                                    <i class="bi bi-star product-box__star-icon"></i>
-                                </div>
-                                <div class="product-box__bottom flex-between-center">
-                                    <div class="product-box__like-bag flex-between-center">
-                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
-                                        <i
-                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
-                                    </div>
-                                    <span class="product-box__price">65000 تومان</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="user-infos">
-                    <h3 class="user-infos__title section-title user-panel__title">مشخصات کاربر</h3>
-                    <form action="" class="user-infos__form flex-column-center-start">
-                        <div class="user-infos__btn-group">
-                            <label for="user-infos__input-name-id" class="user-infos__label">نام و نام خانوادگی : </label>
-                            <input type="text" value="سید محسن موسوی" class="user-infos__input" id="user-infos__input-name-id">
-                        </div>
-                        <div class="user-infos__btn-group">
-                            <label for="user-infos__input-username-id" class="user-infos__label">نام کاربری : </label>
-                            <input type="text" value="mohsen.wsx" class="user-infos__input" id="user-infos__input-username-id">
-                        </div>
-                        <div class="user-infos__btn-group">
-                            <label for="user-infos__input-password-id" class="user-infos__label">گذرواژه جدید : </label>
-                            <input type="password" class="user-infos__input" id="user-infos__input-password-id">
-                        </div>
-                        <div class="user-infos__btn-group">
-                            <label for="user-infos__input-repeatPassword-id" class="user-infos__label">تکرار گذرواژه جدید : </label>
-                            <input type="password" class="user-infos__input" id="user-infos__input-repeatPassword-id">
-                        </div>
-                        <div class="user-infos__btn-group">
-                            <label for="user-infos__input-photo-id" class="user-infos__label">عکس پروفایل : </label>
-                            <input type="file" class="user-infos__file-input" id="user-infos__input-photo-id">
-                        </div>
-                        <div class="user-infos__submit-wrapper">
-                            <input type="submit" class="user-infos__submit" value="اعمال تغیرات">
-                        </div>
-                    </form>
-                </div> -->
-                <!-- <div class="orders">
+                </div>
+                <div class="orders d-none" id="orders-page-id">
                     <h3 class="orders__title section-title user-panel__title">سفارش ها</h3>
                     <div class="orders__wrapper">
                         <div class="order-box">
@@ -425,8 +296,137 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <!-- <div class="tickets">
+                </div>
+                <div class="popular-products d-none" id="popular-products-page-id">
+                    <h3 class="popular-products__title section-title user-panel__title">علاقه مندی ها</h3>
+                    <div class="row g-4">
+                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-xl-3">
+                            <div class="product-box">
+                                <div class="product-box__cover">
+                                    <img src="./images/coffee1.jpg" class="product-box__img" alt="coffee">
+                                    <div class="product-box__cover-shadow"></div>
+                                </div>
+                                <span class="product-box__title">قهوه لاته</span>
+                                <div class="product-box__score">
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star-fill product-box__star-icon"></i>
+                                    <i class="bi bi-star product-box__star-icon"></i>
+                                </div>
+                                <div class="product-box__bottom flex-between-center">
+                                    <div class="product-box__like-bag flex-between-center">
+                                        <i class="bi bi-cart-dash-fill product-box__heart-icon"></i>
+                                        <i
+                                            class="bi bi-suit-heart-fill product-box__like-icon product-box__like-icon--liked"></i>
+                                    </div>
+                                    <span class="product-box__price">65000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-infos d-none" id="user-infos-page-id">
+                    <h3 class="user-infos__title section-title user-panel__title">مشخصات کاربر</h3>
+                    <form action="" class="user-infos__form flex-column-center-start">
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-name-id" class="user-infos__label">نام و نام خانوادگی : </label>
+                            <input type="text" value="سید محسن موسوی" class="user-infos__input" id="user-infos__input-name-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-username-id" class="user-infos__label">نام کاربری : </label>
+                            <input type="text" value="mohsen.wsx" class="user-infos__input" id="user-infos__input-username-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-password-id" class="user-infos__label">گذرواژه جدید : </label>
+                            <input type="password" class="user-infos__input" id="user-infos__input-password-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-repeatPassword-id" class="user-infos__label">تکرار گذرواژه جدید : </label>
+                            <input type="password" class="user-infos__input" id="user-infos__input-repeatPassword-id">
+                        </div>
+                        <div class="user-infos__btn-group">
+                            <label for="user-infos__input-photo-id" class="user-infos__label">عکس پروفایل : </label>
+                            <input type="file" class="user-infos__file-input" id="user-infos__input-photo-id">
+                        </div>
+                        <div class="user-infos__submit-wrapper">
+                            <input type="submit" class="user-infos__submit" value="اعمال تغیرات">
+                        </div>
+                    </form>
+                </div>
+                <div class="tickets d-none" id="tickets-page-id">
                     <h3 class="tickets__title section-title user-panel__title">تیکت های پشتیبانی</h3>
                     <form class="tickets__new-ticket">
                         <div class="user-panel__btn-group">
@@ -514,8 +514,8 @@
                             <div class="ticket-box__status"></div>
                         </div>
                     </div>
-                </div> -->
-                <div class="single-ticket">
+                </div>
+                <div class="single-ticket d-none">
                     <h5 class="single-ticket__title user-infos__title">تاخیر در ارسال محصول</h5>
                     <div class="single-ticket__wrapper">
                         <div class="single-ticket__user-message">

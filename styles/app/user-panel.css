@@ -162,6 +162,10 @@ textarea.user-panel__input{
 .user-panel-sidebar--close .user-panel-sidebar__shadow{
     left: 0;
 }
+
+.user-panel-sidebar--active{
+    color: var(--light-color);
+}
 /* end sidebar */
 
 /* start user-panel-header */
