@@ -1,0 +1,102 @@
+body{
+    background: #eee;
+}
+
+.admin-panel{
+    position: relative;
+}
+
+.admin-panel__mainbar{
+    margin: 2rem 26rem 2rem 0;
+    border-radius: var(--border-radius);
+    border: 3px solid var(--admin-panel-color);
+    padding: 2rem;
+}
+
+/* start admin-panel-sidebar */
+.admin-panel-sidebar{
+    position: absolute;
+    width: 25rem;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: var(--admin-panel-color);
+    padding: 2rem;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    box-shadow: 0 0 1rem var(--admin-panel-color);
+}
+
+.admin-panel-sidebar__logo{
+    text-align: center;
+}
+
+.admin-panel-sidebar__logo-text{
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-shadow: 0 0 1rem var(--primary-color);
+}
+
+.admin-panel-sidebar__menu{
+    font-size: 3rem;
+    width: 100%;
+}
+
+.admin-panel-sidebar__menu-item{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+.admin-panel-sidebar__menu-item--active{
+    position: relative;
+    box-shadow: inset 0rem 0 1rem #000;
+}
+
+.admin-panel-sidebar__menu-item--active .admin-panel-sidebar__menu-link{
+    color: var(--primary-color);
+}
+
+.admin-panel-sidebar__menu-icon{
+    margin-left: 1rem;
+}
+/* end admin-panel-sidebar */
+
+/* start admin-panel-header */
+
+.admin-panel-header{
+border-bottom: 1px solid #aaa;
+padding-bottom: 2rem;
+}
+
+.admin-panel-header__menu-btn{
+    font-size: 3rem;
+    color: var(--admin-panel-color);
+}
+
+.admin-panel-header__intro-text{
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    color: var(--admin-panel-color);
+    text-shadow: 0 0 1rem var(--admin-panel-color);
+}
+
+.admin-panel-header__user-info{
+    align-items: end;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    gap: 0.5rem;
+    font-family: var(--text-font);
+}
+
+.admin-panel-header__roule{
+    font-size: 1.4rem;
+    color: var(--admin-panel-color);
+}
+
+.admin-panel-header__user-img{
+    width: 6rem;
+    border : 4px solid var(--admin-panel-color);
+    border-radius: 50%;
+}
+/* end admin-panel-header */
