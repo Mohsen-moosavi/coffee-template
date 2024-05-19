@@ -1,23 +1,35 @@
-body{
+body {
     background: #eee;
+    margin: 2rem 0;
 }
 
-.admin-panel{
-    position: relative;
-}
-
-.admin-panel__mainbar{
-    margin: 2rem 26rem 2rem 0;
-    border-radius: var(--border-radius);
+.admin-panel__mainbar {
+    position: sticky;
+    top: 0rem;
+    margin: -100vh 25rem 2rem 0;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
     border: 3px solid var(--admin-panel-color);
+    box-shadow: inset 0 0 1rem #000;
+    min-height: 100vh;
     padding: 2rem;
+    background-color: rgba(14, 75, 80, 0.1);
+}
+
+.admin-panel__title{
+    font-size: 4rem;
+    color: var(--admin-panel-color);
+    text-shadow: 0 0 1rem var(--admin-panel-color);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 /* start admin-panel-sidebar */
-.admin-panel-sidebar{
-    position: absolute;
+.admin-panel-sidebar {
+    position: sticky;
     width: 25rem;
-    height: 100vh;
+    min-height: calc(100vh);
     top: 0;
     right: 0;
     background-color: var(--admin-panel-color);
@@ -27,61 +39,64 @@ body{
     box-shadow: 0 0 1rem var(--admin-panel-color);
 }
 
-.admin-panel-sidebar__logo{
+.admin-panel-sidebar__logo {
     text-align: center;
 }
 
-.admin-panel-sidebar__logo-text{
+.admin-panel-sidebar__logo-text {
     color: var(--primary-color);
     font-size: 3rem;
     text-shadow: 0 0 1rem var(--primary-color);
 }
 
-.admin-panel-sidebar__menu{
+.admin-panel-sidebar__menu {
     font-size: 3rem;
     width: 100%;
 }
 
-.admin-panel-sidebar__menu-item{
+.admin-panel-sidebar__menu-item {
     display: block;
     width: 100%;
     padding: 1rem;
     border-radius: var(--border-radius);
 }
-.admin-panel-sidebar__menu-item--active{
+
+.admin-panel-sidebar__menu-item--active {
     position: relative;
     box-shadow: inset 0rem 0 1rem #000;
 }
 
-.admin-panel-sidebar__menu-item--active .admin-panel-sidebar__menu-link{
+.admin-panel-sidebar__menu-item--active .admin-panel-sidebar__menu-link {
     color: var(--primary-color);
 }
 
-.admin-panel-sidebar__menu-icon{
+.admin-panel-sidebar__menu-icon {
     margin-left: 1rem;
 }
+
 /* end admin-panel-sidebar */
 
 /* start admin-panel-header */
 
-.admin-panel-header{
-border-bottom: 1px solid #aaa;
-padding-bottom: 2rem;
+.admin-panel-header {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-.admin-panel-header__menu-btn{
+.admin-panel-header__menu-btn {
     font-size: 3rem;
     color: var(--admin-panel-color);
 }
 
-.admin-panel-header__intro-text{
+.admin-panel-header__intro-text {
     margin-right: 1rem;
     font-size: 2.5rem;
     color: var(--admin-panel-color);
     text-shadow: 0 0 1rem var(--admin-panel-color);
 }
 
-.admin-panel-header__user-info{
+.admin-panel-header__user-info {
     align-items: end;
     margin-left: 1rem;
     font-size: 2.5rem;
@@ -89,14 +104,174 @@ padding-bottom: 2rem;
     font-family: var(--text-font);
 }
 
-.admin-panel-header__roule{
+.admin-panel-header__roule {
     font-size: 1.4rem;
     color: var(--admin-panel-color);
 }
 
-.admin-panel-header__user-img{
+.admin-panel-header__user-img {
     width: 6rem;
-    border : 4px solid var(--admin-panel-color);
+    border: 4px solid var(--admin-panel-color);
     border-radius: 50%;
 }
+
 /* end admin-panel-header */
+
+/* start admin-panel-console */
+.admin-details-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    background-color: var(--admin-panel-color);
+    border: 2px solid var(--admin-panel-color);
+    box-shadow: 0 0 1rem var(--admin-panel-color);
+    color: var(--light-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.admin-details-box__number,
+.admin-details-box__icon {
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-family: var(--text-font);
+}
+
+.admin-details-box__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* end admin-panel-console */
+
+/* start admin-panel-product */
+
+.admin-panel-product__add-product{
+    border-bottom: 2px solid rgba(14, 75, 80, 0.4);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.admin-panel-product__subtitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--admin-panel-color);
+}
+
+.admin-panel__btn-group{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.3rem;
+    width: 100%;
+    font-family: var(--text-font);
+    margin-bottom: 1rem;
+}
+
+.admin-panel__label{
+       font-size: 2rem;
+       color: var(--admin-panel-color);
+       opacity: 0.8;
+}
+
+.admin-panel__input{
+    width: 100%;
+    border: 1px solid var(--admin-panel-color);
+    background-color: rgba(14, 75, 80, 0.4);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    resize: none;
+}
+
+.admin-panel__input--short-desc{
+    height: 10rem;
+}
+
+.admin-panel__input--long-desc{
+    height: 20rem;
+}
+
+.admin-panel__input::placeholder{
+    color: var(--dark-color);
+    opacity: 0.7;
+}
+
+.admin-panel__form-submit{
+    text-align: end;
+    margin-top: 1rem;
+}
+
+.admin-panel__form-btn-submit{
+    border-radius: var(--border-radius);
+    background-color: var(--admin-panel-color);
+    color: var(--light-color);
+    border: none;
+    padding: 1rem;
+}
+
+.admin-panel__form-btn-submit:hover{
+    opacity: 0.6;
+}
+
+.admin-panel-product__table-wrapper{
+    border: 3px solid var(--admin-panel-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.admin-panel-product__table{
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.admin-panel-product__table tr td,
+.admin-panel-product__table tr th{
+    border: 1px solid var(--admin-panel-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.admin-panel-product__table tr th{
+    font-weight: 700;
+}
+
+.admin-panel-product__table tr td{
+    font-family: var(--text-font);
+}
+
+.admin-panel-dataTable__btn{
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+}
+
+.admin-panel-dataTable__btn:hover{
+    opacity: 0.7;
+}
+
+.admin-panel-dataTable__btn--edit{
+    background-color: #2e69a9;
+}
+
+.admin-panel-dataTable__btn--delete{
+    background-color: rgb(223, 99, 95);
+}
+/* end admin-panel-product */
+
+.admin-panel__chart{
+    margin-top: 2rem;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}

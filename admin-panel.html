@@ -84,10 +84,290 @@
                             <img src="./images/1.jpg" class="admin-panel-header__user-img" alt="user">
                         </div>
                     </div>
+
+                    <div class="admin-panel__content">
+                        <!-- <div class="admin-panel-console">
+                            <div class="admin-panel-console__details-boxs">
+                                <div class="row g-4">
+                                    <div class="col-4">
+                                        <div class="admin-details-box">
+                                            <div class="admin-details-box__detail">
+                                                <span class="admin-details-box__title">تعداد کامنت ها</span>
+                                                <span class="admin-details-box__number">23</span>
+                                            </div>
+                                            <i class="bi bi-chat-left-dots-fill admin-details-box__icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="admin-details-box">
+                                            <div class="admin-details-box__detail">
+                                                <span class="admin-details-box__title">تعداد محصولات</span>
+                                                <span class="admin-details-box__number">43</span>
+                                            </div>
+                                            <i class="bi bi-box-seam-fill admin-details-box__icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="admin-details-box">
+                                            <div class="admin-details-box__detail">
+                                                <span class="admin-details-box__title">تعداد سفارشات</span>
+                                                <span class="admin-details-box__number">13</span>
+                                            </div>
+                                            <i class="bi bi-cart4 admin-details-box__icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="admin-details-box">
+                                            <div class="admin-details-box__detail">
+                                                <span class="admin-details-box__title">تعداد کاربران</span>
+                                                <span class="admin-details-box__number">103</span>
+                                            </div>
+                                            <i class="bi bi-people-fill admin-details-box__icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="admin-details-box">
+                                            <div class="admin-details-box__detail">
+                                                <span class="admin-details-box__title">تعداد تخفیف های فعال</span>
+                                                <span class="admin-details-box__number">8</span>
+                                            </div>
+                                            <i class="bi bi-currency-dollar admin-details-box__icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="admin-details-box">
+                                            <div class="admin-details-box__detail">
+                                                <span class="admin-details-box__title">تعداد تیکت ها</span>
+                                                <span class="admin-details-box__number">9</span>
+                                            </div>
+                                            <i class="bi bi-ticket-perforated-fill admin-details-box__icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="admin-panel__chart">
+                                    <canvas id="myChart" style="width:100%"></canvas>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="admin-panel-product">
+                            <h3 class="admin-panel__title">محصولات</h3>
+                            <div class="admin-panel-product__add-product">
+                                <h4 class="admin-panel-product__subtitle">اضافه کردن محصول جدید</h4>
+                                <form action="" class="admin-panel-product__add-product-form">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-1" class="admin-panel__label">نام محصول</label>
+                                                <input type="text" placeholder="نام محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-1">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-10" class="admin-panel__label">نام کوتاه</label>
+                                                <input type="text" placeholder="نام کوتاه محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-10">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-2" class="admin-panel__label">قیمت محصول</label>
+                                                <input type="text" placeholder="قیمت محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-3" class="admin-panel__label">تولید کننده</label>
+                                                <input type="text" placeholder="شرکت محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-3">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-4" class="admin-panel__label">تعداد</label>
+                                                <input type="text" placeholder="تعداد موجودی محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-4">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-5" class="admin-panel__label">وزن</label>
+                                                <input type="text" placeholder="وزن محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-5">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-6" class="admin-panel__label">میزان بو</label>
+                                                <input type="text" placeholder="میزان بوی محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-6">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-7" class="admin-panel__label">مناسب برای</label>
+                                                <input type="text" placeholder="مخاطبان محصول را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-7">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-8" class="admin-panel__label">توضیحات کوتاه</label>
+                                                <textarea placeholder="توضیحات کوتاه محصول را وارد کنید..."
+                                                    class="admin-panel__input admin-panel__input--short-desc" id="admin-panel__input-7"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-9" class="admin-panel__label">توضیحات کامل</label>
+                                                <textarea placeholder="توضیحات کامل محصول را وارد کنید..."
+                                                    class="admin-panel__input admin-panel__input--long-desc" id="admin-panel__input-9"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="admin-panel__form-submit">
+                                            <input type="submit" value="اضافه کردن محصول"
+                                            class="admin-panel__form-btn-submit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="admin-panel-dataTable">
+                                <h4 class="admin-panel-product__subtitle">لیست محصولات</h4>
+                                <div class="admin-panel-product__table-wrapper">
+                                    <div class="tabel-responsive">
+                                        <table class="admin-panel-product__table table">
+                                            <thead>
+                                                <tr>
+                                                    <th>شماره</th>
+                                                    <th>نام</th>
+                                                    <th>قیمت</th>
+                                                    <th>تولید کننده</th>
+                                                    <th>تعداد</th>
+                                                    <th>وزن</th>
+                                                    <th>میزان بو</th>
+                                                    <th>مناسب برای</th>
+                                                    <th>ویرایش</th>
+                                                    <th>حذف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>کاپوچینو بدون قند - 12.5 گرم بسته 20 عددی</td>
+                                                    <td>24,000</td>
+                                                    <td>شرکت ایران کافه</td>
+                                                    <td>43</td>
+                                                    <td>54</td>
+                                                    <td>متوسط</td>
+                                                    <td>عموم افراد</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>کاپوچینو بدون قند - 12.5 گرم بسته 20 عددی</td>
+                                                    <td>24,000</td>
+                                                    <td>شرکت ایران کافه</td>
+                                                    <td>43</td>
+                                                    <td>54</td>
+                                                    <td>متوسط</td>
+                                                    <td>عموم افراد</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>کاپوچینو بدون قند - 12.5 گرم بسته 20 عددی</td>
+                                                    <td>24,000</td>
+                                                    <td>شرکت ایران کافه</td>
+                                                    <td>43</td>
+                                                    <td>54</td>
+                                                    <td>متوسط</td>
+                                                    <td>عموم افراد</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>کاپوچینو بدون قند - 12.5 گرم بسته 20 عددی</td>
+                                                    <td>24,000</td>
+                                                    <td>شرکت ایران کافه</td>
+                                                    <td>43</td>
+                                                    <td>54</td>
+                                                    <td>متوسط</td>
+                                                    <td>عموم افراد</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>کاپوچینو بدون قند - 12.5 گرم بسته 20 عددی</td>
+                                                    <td>24,000</td>
+                                                    <td>شرکت ایران کافه</td>
+                                                    <td>43</td>
+                                                    <td>54</td>
+                                                    <td>متوسط</td>
+                                                    <td>عموم افراد</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="./js/admin-panel.js"></script>
 </body>
 
 </html>
