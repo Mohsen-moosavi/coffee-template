@@ -16,46 +16,55 @@
     <div class="admin-panel-page">
         <div class="container-xxl">
             <div class="admin-panel">
-                <div class="admin-panel-sidebar">
+                <div class="admin-panel-sidebar admin-panel-sidebar--close">
+                    <div class="admin-panel-sidebar__close-btn">
+                        <i class="bi bi-x-lg admin-panel-sidebar__close-icon"></i>
+                    </div>
                     <div class="admin-panel-sidebar__logo">
                         <span class="admin-panel-sidebar__logo-text">قهوه چی</span>
                     </div>
                     <hr class="admin-panel-sidebar__divider-line">
                     <ul class="admin-panel-sidebar__menu flex-column-center-start">
-                        <li class="admin-panel-sidebar__menu-item admin-panel-sidebar__menu-item--active">
-                            <a href="#" class="admin-panel-sidebar__menu-link">
+                        <li class="admin-panel-sidebar__menu-item">
+                            <a href="#" class="admin-panel-sidebar__menu-link admin-panel-sidebar__menu-link--active" data-link="admin-page-console">
                                 <i class="bi bi-house-gear-fill admin-panel-sidebar__menu-icon"></i>
                                 پیشخوان
                             </a>
                         </li>
                         <li class="admin-panel-sidebar__menu-item">
-                            <a href="#" class="admin-panel-sidebar__menu-link">
+                            <a href="#" class="admin-panel-sidebar__menu-link"  data-link="admin-page-products">
                                 <i class="bi bi-basket-fill admin-panel-sidebar__menu-icon"></i>
                                 محصولات
                             </a>
                         </li>
                         <li class="admin-panel-sidebar__menu-item">
-                            <a href="#" class="admin-panel-sidebar__menu-link">
+                            <a href="#" class="admin-panel-sidebar__menu-link"  data-link="admin-page-users">
                                 <i class="bi bi-person-fill admin-panel-sidebar__menu-icon"></i>
                                 کاربران
                             </a>
                         </li>
                         <li class="admin-panel-sidebar__menu-item">
-                            <a href="#" class="admin-panel-sidebar__menu-link">
+                            <a href="#" class="admin-panel-sidebar__menu-link"  data-link="admin-page-comments">
                                 <i class="bi bi-chat-left-text-fill admin-panel-sidebar__menu-icon"></i>
                                 کامنت ها
                             </a>
                         </li>
                         <li class="admin-panel-sidebar__menu-item">
-                            <a href="#" class="admin-panel-sidebar__menu-link">
+                            <a href="#" class="admin-panel-sidebar__menu-link"  data-link="admin-page-tickets">
                                 <i class="bi bi-ticket-perforated-fill admin-panel-sidebar__menu-icon"></i>
                                 تیکت ها
                             </a>
                         </li>
                         <li class="admin-panel-sidebar__menu-item">
-                            <a href="#" class="admin-panel-sidebar__menu-link">
+                            <a href="#" class="admin-panel-sidebar__menu-link"  data-link="admin-page-offs">
                                 <i class="bi bi-currency-dollar admin-panel-sidebar__menu-icon"></i>
                                 تخفیفات
+                            </a>
+                        </li>
+                        <li class="admin-panel-sidebar__menu-item">
+                            <a href="#" class="admin-panel-sidebar__menu-link"  data-link="admin-page-articles">
+                                <i class="bi bi-newspaper admin-panel-sidebar__menu-icon"></i>
+                                مقالات
                             </a>
                         </li>
                         <li class="admin-panel-sidebar__menu-item">
@@ -65,6 +74,7 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="admin-panel-sidebar__shadow"></div>
                 </div>
                 <main class="admin-panel__mainbar">
                     <div class="admin-panel-header flex-between-center">
@@ -86,10 +96,10 @@
                     </div>
 
                     <div class="admin-panel__content">
-                        <!-- <div class="admin-panel-console">
+                        <div class="admin-panel-console" id='admin-page-console'>
                             <div class="admin-panel-console__details-boxs">
-                                <div class="row g-4">
-                                    <div class="col-4">
+                                <div class="row g-sm-4 g-2">
+                                    <div class="col-lg-4 col-6">
                                         <div class="admin-details-box">
                                             <div class="admin-details-box__detail">
                                                 <span class="admin-details-box__title">تعداد کامنت ها</span>
@@ -98,7 +108,7 @@
                                             <i class="bi bi-chat-left-dots-fill admin-details-box__icon"></i>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-6">
                                         <div class="admin-details-box">
                                             <div class="admin-details-box__detail">
                                                 <span class="admin-details-box__title">تعداد محصولات</span>
@@ -107,7 +117,7 @@
                                             <i class="bi bi-box-seam-fill admin-details-box__icon"></i>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-6">
                                         <div class="admin-details-box">
                                             <div class="admin-details-box__detail">
                                                 <span class="admin-details-box__title">تعداد سفارشات</span>
@@ -116,7 +126,7 @@
                                             <i class="bi bi-cart4 admin-details-box__icon"></i>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-6">
                                         <div class="admin-details-box">
                                             <div class="admin-details-box__detail">
                                                 <span class="admin-details-box__title">تعداد کاربران</span>
@@ -125,16 +135,16 @@
                                             <i class="bi bi-people-fill admin-details-box__icon"></i>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-6">
                                         <div class="admin-details-box">
                                             <div class="admin-details-box__detail">
-                                                <span class="admin-details-box__title">تعداد تخفیف های فعال</span>
+                                                <span class="admin-details-box__title">تخفیف های فعال</span>
                                                 <span class="admin-details-box__number">8</span>
                                             </div>
                                             <i class="bi bi-currency-dollar admin-details-box__icon"></i>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4 col-6">
                                         <div class="admin-details-box">
                                             <div class="admin-details-box__detail">
                                                 <span class="admin-details-box__title">تعداد تیکت ها</span>
@@ -148,8 +158,8 @@
                                     <canvas id="myChart" style="width:100%"></canvas>
                                 </div>
                             </div>
-                        </div> -->
-                        <div class="admin-panel-product">
+                        </div>
+                        <div class="admin-panel-product d-none" id='admin-page-products'>
                             <h3 class="admin-panel__title">محصولات</h3>
                             <div class="admin-panel-product__add-product">
                                 <h4 class="admin-panel__subtitle">اضافه کردن محصول جدید</h4>
@@ -157,35 +167,40 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-1" class="admin-panel__label">نام محصول</label>
+                                                <label for="admin-panel__input-1" class="admin-panel__label">نام
+                                                    محصول</label>
                                                 <input type="text" placeholder="نام محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-1">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-10" class="admin-panel__label">نام کوتاه</label>
+                                                <label for="admin-panel__input-10" class="admin-panel__label">نام
+                                                    کوتاه</label>
                                                 <input type="text" placeholder="نام کوتاه محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-10">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-2" class="admin-panel__label">قیمت محصول</label>
+                                                <label for="admin-panel__input-2" class="admin-panel__label">قیمت
+                                                    محصول</label>
                                                 <input type="text" placeholder="قیمت محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-2">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-3" class="admin-panel__label">تولید کننده</label>
+                                                <label for="admin-panel__input-3" class="admin-panel__label">تولید
+                                                    کننده</label>
                                                 <input type="text" placeholder="شرکت محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-3">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-4" class="admin-panel__label">تعداد</label>
+                                                <label for="admin-panel__input-4"
+                                                    class="admin-panel__label">تعداد</label>
                                                 <input type="text" placeholder="تعداد موجودی محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-4">
                                             </div>
@@ -199,37 +214,43 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-6" class="admin-panel__label">میزان بو</label>
+                                                <label for="admin-panel__input-6" class="admin-panel__label">میزان
+                                                    بو</label>
                                                 <input type="text" placeholder="میزان بوی محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-6">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-7" class="admin-panel__label">مناسب برای</label>
+                                                <label for="admin-panel__input-7" class="admin-panel__label">مناسب
+                                                    برای</label>
                                                 <input type="text" placeholder="مخاطبان محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-7">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-8" class="admin-panel__label">توضیحات کوتاه</label>
+                                                <label for="admin-panel__input-8" class="admin-panel__label">توضیحات
+                                                    کوتاه</label>
                                                 <textarea placeholder="توضیحات کوتاه محصول را وارد کنید..."
-                                                    class="admin-panel__input admin-panel__input--short-desc" id="admin-panel__input-7"></textarea>
+                                                    class="admin-panel__input admin-panel__input--short-desc"
+                                                    id="admin-panel__input-7"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="admin-panel__btn-group">
-                                                <label for="admin-panel__input-9" class="admin-panel__label">توضیحات کامل</label>
+                                                <label for="admin-panel__input-9" class="admin-panel__label">توضیحات
+                                                    کامل</label>
                                                 <textarea placeholder="توضیحات کامل محصول را وارد کنید..."
-                                                    class="admin-panel__input admin-panel__input--long-desc" id="admin-panel__input-9"></textarea>
+                                                    class="admin-panel__input admin-panel__input--long-desc"
+                                                    id="admin-panel__input-9"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="admin-panel__form-submit">
                                             <input type="submit" value="اضافه کردن محصول"
-                                            class="admin-panel__form-btn-submit">
+                                                class="admin-panel__form-btn-submit">
                                         </div>
                                     </div>
                                 </form>
@@ -415,7 +436,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="admin-panel-users">
+                        <div class="admin-panel-users d-none" id='admin-page-users'>
                             <h3 class="admin-panel__title">لیست کاربران</h3>
                             <div class="admin-panel-dataTable">
                                 <div class="admin-panel-product__table-wrapper">
@@ -633,8 +654,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="admin-panel-users">
+                        </div>
+                        <div class="admin-panel-comments d-none" id='admin-page-comments'>
                             <h3 class="admin-panel__title">لیست کامنت ها</h3>
                             <div class="admin-panel-dataTable">
                                 <div class="admin-panel-product__table-wrapper">
@@ -929,8 +950,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="admin-panel-users">
+                        </div>
+                        <div class="admin-panel-tickets d-none" id='admin-page-tickets'>
                             <h3 class="admin-panel__title">لیست تیکت ها</h3>
                             <div class="admin-panel-dataTable">
                                 <div class="admin-panel-product__table-wrapper">
@@ -1073,8 +1094,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="admin-panel-offs">
+                        </div>
+                        <div class="admin-panel-offs d-none" id='admin-page-offs'>
                             <h3 class="admin-panel__title">تخفیف ها</h3>
                             <div class="admin-panel-offs__add-off">
                                 <h4 class="admin-panel__subtitle">کد تخفیف جدید</h4>
@@ -1210,7 +1231,175 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="admin-panel-articles d-none" id='admin-page-articles'>
+                            <h3 class="admin-panel__title">مقالات</h3>
+                            <div class="admin-panel-articles__add-article">
+                                <h4 class="admin-panel__subtitle">اضافه کردن مقاله جدید</h4>
+                                <form action="" class="admin-panel-articles__add-product-form">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-1" class="admin-panel__label">عنوان
+                                                    مقاله</label>
+                                                <input type="text" placeholder="عنوان مقاله را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-1">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-10" class="admin-panel__label">نام
+                                                    نویسنده</label>
+                                                <input type="text" placeholder="نام نویسنده را وارد کنید..."
+                                                    class="admin-panel__input" id="admin-panel__input-10">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="admin-panel__btn-group">
+                                                <label for="admin-panel__input-8" class="admin-panel__label">متن
+                                                    مقاله</label>
+                                                <textarea placeholder="متن مقاله را وارد کنید..."
+                                                    class="admin-panel__input admin-panel__input--short-desc"
+                                                    id="admin-panel__input-7"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="admin-panel__form-submit">
+                                            <input type="submit" value="اضافه کردن مقاله"
+                                                class="admin-panel__form-btn-submit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="admin-panel-dataTable">
+                                <h4 class="admin-panel__subtitle">لیست محصولات</h4>
+                                <div class="admin-panel-product__table-wrapper">
+                                    <div class="tabel-responsive">
+                                        <table class="admin-panel-product__table table">
+                                            <thead>
+                                                <tr>
+                                                    <th>شماره</th>
+                                                    <th>عنوان</th>
+                                                    <th>امتیاز</th>
+                                                    <th>نویسنده</th>
+                                                    <th>تاریخ انتشار</th>
+                                                    <th>ویرایش</th>
+                                                    <th>حذف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>مصرف قهوه به همراه شیر برای کاهش التهاب</td>
+                                                    <td>5</td>
+                                                    <td>سید محسن موسوی ساعی</td>
+                                                    <td>12/2/1402</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>مصرف قهوه به همراه شیر برای کاهش التهاب</td>
+                                                    <td>5</td>
+                                                    <td>سید محسن موسوی ساعی</td>
+                                                    <td>12/2/1402</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>مصرف قهوه به همراه شیر برای کاهش التهاب</td>
+                                                    <td>5</td>
+                                                    <td>سید محسن موسوی ساعی</td>
+                                                    <td>12/2/1402</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>مصرف قهوه به همراه شیر برای کاهش التهاب</td>
+                                                    <td>5</td>
+                                                    <td>سید محسن موسوی ساعی</td>
+                                                    <td>12/2/1402</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>مصرف قهوه به همراه شیر برای کاهش التهاب</td>
+                                                    <td>5</td>
+                                                    <td>سید محسن موسوی ساعی</td>
+                                                    <td>12/2/1402</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>مصرف قهوه به همراه شیر برای کاهش التهاب</td>
+                                                    <td>5</td>
+                                                    <td>سید محسن موسوی ساعی</td>
+                                                    <td>12/2/1402</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>مصرف قهوه به همراه شیر برای کاهش التهاب</td>
+                                                    <td>5</td>
+                                                    <td>سید محسن موسوی ساعی</td>
+                                                    <td>12/2/1402</td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--edit">ویرایش</button>
+                                                    </td>
+                                                    <td>
+                                                        <button
+                                                            class="admin-panel-dataTable__btn admin-panel-dataTable__btn--delete">حذف</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>

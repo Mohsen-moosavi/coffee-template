@@ -6,13 +6,7 @@ const closeMenu = document.querySelector(".user-panel-sidebar__close-btn");
 const sidebarShadow = document.querySelector(".user-panel-sidebar__shadow");
 
 const userPanelSidebarMenuItem = document.querySelectorAll(".user-panel-sidebar__link");
-const userPanelMainContent = doc.querySelector(".user-panel")
-const consolePage = doc.querySelector(".console")
-const adressesPage = doc.querySelector(".adresses")
-const ordersPage = doc.querySelector(".orders")
-const popularsPage = doc.querySelector(".popular-products")
-const userInfosPage = doc.querySelector(".user-infos")
-const ticketsPage = doc.querySelector(".tickets")
+const userPanelContent = document.querySelector(".user-panel");
 
 
 
@@ -38,7 +32,7 @@ userPanelSidebarMenuItem.forEach(item=>{
             item.classList.remove("user-panel-sidebar--active")
         })
         event.target.classList.add("user-panel-sidebar--active")
-        const userPanelPages = userPanelMainContent.children
+        const userPanelPages = userPanelContent.children
         for (const page in userPanelPages) {
             if(userPanelPages[page].id === event.target.dataset.link){
                 userPanelPages[page].classList?.remove("d-none")

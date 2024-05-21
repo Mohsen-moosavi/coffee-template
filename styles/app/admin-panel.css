@@ -3,10 +3,14 @@ body {
     margin: 2rem 0;
 }
 
+.admin-panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
 .admin-panel__mainbar {
-    position: sticky;
-    top: 0rem;
-    margin: -100vh 25rem 2rem 0;
+    flex: 1;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     border: 3px solid var(--admin-panel-color);
@@ -14,6 +18,7 @@ body {
     min-height: 100vh;
     padding: 2rem;
     background-color: rgba(14, 75, 80, 0.1);
+    transition: var(--transition);
 }
 
 .admin-panel__title{
@@ -35,15 +40,16 @@ body {
 /* start admin-panel-sidebar */
 .admin-panel-sidebar {
     position: sticky;
-    width: 25rem;
-    min-height: calc(100vh);
     top: 0;
-    right: 0;
+    width: 25rem;
+    min-width: 25rem;
+    min-height: 100vh;
     background-color: var(--admin-panel-color);
     padding: 2rem;
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     box-shadow: 0 0 1rem var(--admin-panel-color);
+    transition: var(--transition);
 }
 
 .admin-panel-sidebar__logo {
@@ -63,22 +69,48 @@ body {
 
 .admin-panel-sidebar__menu-item {
     display: block;
+    text-wrap: nowrap;
+    overflow: hidden;
     width: 100%;
-    padding: 1rem;
-    border-radius: var(--border-radius);
 }
 
-.admin-panel-sidebar__menu-item--active {
+.admin-panel-sidebar__menu-link--active {
     position: relative;
     box-shadow: inset 0rem 0 1rem #000;
 }
 
-.admin-panel-sidebar__menu-item--active .admin-panel-sidebar__menu-link {
+.admin-panel-sidebar__menu-link--active {
     color: var(--primary-color);
+}
+
+.admin-panel-sidebar__menu-link{
+    display: block;
+    padding: 1rem;
+    border-radius: var(--border-radius);
 }
 
 .admin-panel-sidebar__menu-icon {
     margin-left: 1rem;
+}
+
+.admin-panel-sidebar__close-btn{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    display: none;
+}
+
+.admin-panel-sidebar__shadow{
+    width: calc(100vw - 25rem);
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    right: calc(25rem - 100vw);
+    display: none;
+    transition: var(--transition);
 }
 
 /* end admin-panel-sidebar */
@@ -92,12 +124,13 @@ body {
 }
 
 .admin-panel-header__menu-btn {
+    display: none;
     font-size: 3rem;
     color: var(--admin-panel-color);
+    margin-left: 1rem;
 }
 
 .admin-panel-header__intro-text {
-    margin-right: 1rem;
     font-size: 2.5rem;
     color: var(--admin-panel-color);
     text-shadow: 0 0 1rem var(--admin-panel-color);

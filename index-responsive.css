@@ -1,6 +1,25 @@
+@media (max-width : 1200px) {
+
+    /* <==================== start admin-panel page ====================> */
+    /* start console page */
+    .admin-details-box {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .admin-details-box__number,
+    .admin-details-box__icon {
+        font-size: 3rem;
+    }
+
+    /* end console page */
+    /* <==================== end admin-panel page ====================> */
+}
+
 @media (max-width : 992px) {
 
     /* <==================== start main page ====================> */
+
     /* <== start header ==> */
     .menu__link {
         font-size: 2rem;
@@ -84,6 +103,48 @@
 
     /* end content */
     /* <==================== end user-panel ====================> */
+
+    /* <==================== start admin-panel page ====================> */
+
+    /* <== start sidebar ==> */
+    .admin-panel-sidebar--close {
+        width: 6rem;
+        min-width: 7rem;
+        padding: 1rem;
+    }
+
+    .admin-panel-sidebar__menu-icon {
+        margin-left: 3rem;
+    }
+
+    /* <== end sidebar ==> */
+
+    /* start header */
+    .admin-panel-header__menu-btn {
+        display: block;
+    }
+
+    .admin-panel-header__intro-text,
+    .admin-panel-header__name {
+        font-size: 2rem;
+    }
+
+    /* end header */
+
+    /* start console page */
+    .admin-details-box {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    .admin-details-box__number,
+    .admin-details-box__icon {
+        font-size: 3rem;
+    }
+
+    /* end console page */
+
+    /* <==================== end admin-panel page ====================> */
 
 }
 
@@ -231,6 +292,58 @@
 
     /* end content */
     /* <==================== end user-panel ====================> */
+
+    /* <==================== start admin-panel page ====================> */
+    /* <== start sidebar ==> */
+
+    .admin-panel-sidebar {
+        right: 0;
+        position: fixed;
+        top: 0;
+        overflow-y: auto;
+        z-index: 3000;
+    }
+
+    .admin-panel-sidebar--close {
+        right: -25rem;
+        width: 25rem;
+        min-width: 25rem;
+        padding: 2rem;
+    }
+
+    .admin-panel-sidebar__menu-icon {
+        margin-left: 1rem;
+    }
+
+    .admin-panel-sidebar__close-btn {
+        display: block;
+    }
+
+    .admin-panel-sidebar__menu {
+        font-size: 1.5rem;
+    }
+
+    .admin-panel-sidebar__shadow {
+        display: block;
+        right: 25rem;
+        opacity: 1;
+    }
+
+    .admin-panel-sidebar--close .admin-panel-sidebar__shadow {
+        right: calc(25rem - 100vw);
+        opacity: 0;
+    }
+
+    /* <== end sidebar ==> */
+
+    /* main bar */
+    .admin-panel__mainbar {
+        border-radius: var(--border-radius);
+    }
+
+    /* main bar */
+
+    /* <==================== end admin-panel page ====================> */
 
 
 }
@@ -517,7 +630,7 @@
         font-size: 1.5rem;
     }
 
-    .single-ticket__title{
+    .single-ticket__title {
         font-size: 2rem;
     }
 
@@ -529,4 +642,48 @@
 
     /* end content */
     /* <==================== end user-panel ====================> */
+
+    /* <==================== start admin-panel ====================> */
+    /* start header */
+    .admin-panel-header {
+        padding-bottom: 0.5rem;
+    }
+
+    .admin-panel-header__user-img {
+        width: 4rem;
+        border-width: 2px;
+    }
+
+    .admin-panel-header__menu-btn {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .admin-panel-header__intro-text,
+    .admin-panel-header__name {
+        font-size: 1rem !important;
+    }
+
+    .admin-panel-header__roule {
+        font-size: 1rem;
+    }
+
+    /* end header */
+
+    /* start console-page */
+    .admin-details-box {
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .admin-details-box__number,
+    .admin-details-box__icon {
+        font-size: 2rem;
+    }
+
+    /* end console-page */
+
+    /* <==================== end admin-panel ====================> */
+
 }

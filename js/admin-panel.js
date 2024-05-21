@@ -18,3 +18,38 @@ new Chart("myChart", {
     }
   }
 });
+
+const adminPanelSidebarLink = document.querySelectorAll(".admin-panel-sidebar__menu-link")
+const adminPanelSidebar = document.querySelector(".admin-panel-sidebar")
+const adminPanelContent = document.querySelector(".admin-panel__content")
+const adminPanelHeaderMenuBtn = document.querySelector(".admin-panel-header__menu-btn")
+const adminPanelSidebarCloseBtn = document.querySelector(".admin-panel-sidebar__close-btn")
+const adminPanelSidebarShadow = document.querySelector(".admin-panel-sidebar__shadow")
+
+adminPanelHeaderMenuBtn.addEventListener("click", toggleSidebar)
+
+adminPanelSidebarCloseBtn.addEventListener("click" , toggleSidebar)
+
+adminPanelSidebarShadow.addEventListener("click" , toggleSidebar)
+
+adminPanelSidebarLink.forEach(item=>{
+  item.addEventListener("click",(event)=>{
+      adminPanelSidebarLink.forEach(item=>{
+          item.classList.remove("admin-panel-sidebar__menu-link--active")
+      })
+      event.currentTarget.classList.add("admin-panel-sidebar__menu-link--active")
+      const adminPanelPages = adminPanelContent.children
+      for (const page in adminPanelPages) {
+          if(adminPanelPages[page].id === event.currentTarget.dataset.link){
+              adminPanelPages[page].classList?.remove("d-none")
+          }else{
+              adminPanelPages[page].classList?.add("d-none")
+          }
+      }
+  })
+})
+
+
+function toggleSidebar(){
+  adminPanelSidebar.classList.toggle("admin-panel-sidebar--close")
+}
