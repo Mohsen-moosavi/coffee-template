@@ -1,4 +1,4 @@
-body {
+.admin-panel-body {
     background: #eee;
     margin: 2rem 0;
 }
@@ -16,6 +16,7 @@ body {
     border: 3px solid var(--admin-panel-color);
     box-shadow: inset 0 0 1rem #000;
     min-height: 100vh;
+    max-width: 100%;
     padding: 2rem;
     background-color: rgba(14, 75, 80, 0.1);
     transition: var(--transition);
@@ -189,9 +190,9 @@ body {
 
 /* end admin-panel-console */
 
-/* start admin-panel-product */
+/* start admin-panel-form */
 
-.admin-panel-product__add-product{
+.admin-panel__add-product{
     border-bottom: 2px solid rgba(14, 75, 80, 0.4);
     padding-bottom: 2rem;
     margin-bottom: 2rem;
@@ -253,30 +254,44 @@ body {
     opacity: 0.6;
 }
 
-.admin-panel-product__table-wrapper{
+/* end admin-panel-form */
+
+/* start admin-panel-dataTable */
+
+.admin-panel-dataTable{
+    transition: var(--transition);
+}
+
+.admin-panel-dataTable__table-wrapper{
     border: 3px solid var(--admin-panel-color);
     border-radius: var(--border-radius);
     overflow: hidden;
 }
 
-.admin-panel-product__table{
+.tabel-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-panel-dataTable__table{
     border-collapse: collapse;
     margin: 0;
 }
 
-.admin-panel-product__table tr td,
-.admin-panel-product__table tr th{
+.admin-panel-dataTable__table tr td,
+.admin-panel-dataTable__table tr th{
     border: 1px solid var(--admin-panel-color);
     text-align: center;
     padding: 1rem;
     font-size: 2rem;
+    text-wrap: nowrap;
 }
 
-.admin-panel-product__table tr th{
+.admin-panel-dataTable__table tr th{
     font-weight: 700;
 }
 
-.admin-panel-product__table tr td{
+.admin-panel-dataTable__table tr td{
     font-family: var(--text-font);
 }
 
@@ -313,7 +328,7 @@ body {
 .admin-panel-dataTable__btn--ban{
     background-color: rgb(218, 116, 79);
 }
-/* end admin-panel-product */
+/* end admin-panel-dataTable */
 
 .admin-panel__chart{
     margin-top: 2rem;

@@ -12,7 +12,7 @@
     <title>admin panel</title>
 </head>
 
-<body dir="rtl">
+<body dir="rtl" class="admin-panel-body">
     <div class="admin-panel-page">
         <div class="container-xxl">
             <div class="admin-panel">
@@ -161,11 +161,11 @@
                         </div>
                         <div class="admin-panel-product d-none" id='admin-page-products'>
                             <h3 class="admin-panel__title">محصولات</h3>
-                            <div class="admin-panel-product__add-product">
+                            <div class="admin-panel__add-product">
                                 <h4 class="admin-panel__subtitle">اضافه کردن محصول جدید</h4>
-                                <form action="" class="admin-panel-product__add-product-form">
+                                <form action="" class="admin-panel__add-product-form">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-1" class="admin-panel__label">نام
                                                     محصول</label>
@@ -173,7 +173,7 @@
                                                     class="admin-panel__input" id="admin-panel__input-1">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-10" class="admin-panel__label">نام
                                                     کوتاه</label>
@@ -181,7 +181,7 @@
                                                     class="admin-panel__input" id="admin-panel__input-10">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-2" class="admin-panel__label">قیمت
                                                     محصول</label>
@@ -189,7 +189,7 @@
                                                     class="admin-panel__input" id="admin-panel__input-2">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-3" class="admin-panel__label">تولید
                                                     کننده</label>
@@ -197,7 +197,7 @@
                                                     class="admin-panel__input" id="admin-panel__input-3">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-4"
                                                     class="admin-panel__label">تعداد</label>
@@ -205,14 +205,14 @@
                                                     class="admin-panel__input" id="admin-panel__input-4">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-5" class="admin-panel__label">وزن</label>
                                                 <input type="text" placeholder="وزن محصول را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-5">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-6" class="admin-panel__label">میزان
                                                     بو</label>
@@ -220,7 +220,7 @@
                                                     class="admin-panel__input" id="admin-panel__input-6">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-7" class="admin-panel__label">مناسب
                                                     برای</label>
@@ -257,9 +257,9 @@
                             </div>
                             <div class="admin-panel-dataTable">
                                 <h4 class="admin-panel__subtitle">لیست محصولات</h4>
-                                <div class="admin-panel-product__table-wrapper">
-                                    <div class="tabel-responsive">
-                                        <table class="admin-panel-product__table table">
+                                <div class="admin-panel-dataTable__table-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="admin-panel-dataTable__table table">
                                             <thead>
                                                 <tr>
                                                     <th>شماره</th>
@@ -439,9 +439,9 @@
                         <div class="admin-panel-users d-none" id='admin-page-users'>
                             <h3 class="admin-panel__title">لیست کاربران</h3>
                             <div class="admin-panel-dataTable">
-                                <div class="admin-panel-product__table-wrapper">
+                                <div class="admin-panel-dataTable__table-wrapper">
                                     <div class="tabel-responsive">
-                                        <table class="admin-panel-product__table table">
+                                        <table class="admin-panel-dataTable__table table">
                                             <thead>
                                                 <tr>
                                                     <th>شماره</th>
@@ -658,9 +658,9 @@
                         <div class="admin-panel-comments d-none" id='admin-page-comments'>
                             <h3 class="admin-panel__title">لیست کامنت ها</h3>
                             <div class="admin-panel-dataTable">
-                                <div class="admin-panel-product__table-wrapper">
+                                <div class="admin-panel-dataTable__table-wrapper">
                                     <div class="tabel-responsive">
-                                        <table class="admin-panel-product__table table">
+                                        <table class="admin-panel-dataTable__table table">
                                             <thead>
                                                 <tr>
                                                     <th>شماره</th>
@@ -954,9 +954,9 @@
                         <div class="admin-panel-tickets d-none" id='admin-page-tickets'>
                             <h3 class="admin-panel__title">لیست تیکت ها</h3>
                             <div class="admin-panel-dataTable">
-                                <div class="admin-panel-product__table-wrapper">
+                                <div class="admin-panel-dataTable__table-wrapper">
                                     <div class="tabel-responsive">
-                                        <table class="admin-panel-product__table table">
+                                        <table class="admin-panel-dataTable__table table">
                                             <thead>
                                                 <tr>
                                                     <th>شماره</th>
@@ -1099,7 +1099,7 @@
                             <h3 class="admin-panel__title">تخفیف ها</h3>
                             <div class="admin-panel-offs__add-off">
                                 <h4 class="admin-panel__subtitle">کد تخفیف جدید</h4>
-                                <form action="" class="admin-panel-product__add-product-form">
+                                <form action="" class="admin-panel__add-product-form">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="admin-panel__btn-group">
@@ -1108,14 +1108,14 @@
                                                     class="admin-panel__input" id="admin-panel__input-100">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-10" class="admin-panel__label">درصد تخفیف</label>
                                                 <input type="number" placeholder="درصد تخفیف را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-10">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-10" class="admin-panel__label">مدت اعتبار</label>
                                                 <input type="number" placeholder="تعداد روز اعتبار کد را وارد کنید..."
@@ -1131,16 +1131,16 @@
                                     </div>
                                 </form>
                                 <h4 class="admin-panel__subtitle">جشنواره تخفیف</h4>
-                                <form action="" class="admin-panel-product__add-product-form">
+                                <form action="" class="admin-panel__add-product-form">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-10" class="admin-panel__label">درصد تخفیف</label>
                                                 <input type="number" placeholder="درصد تخفیف را وارد کنید..."
                                                     class="admin-panel__input" id="admin-panel__input-10">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-10" class="admin-panel__label">مدت اعتبار</label>
                                                 <input type="number" placeholder="تعداد روز اعتبار را وارد کنید..."
@@ -1157,9 +1157,9 @@
                                 </form>
                                 <h4 class="admin-panel__subtitle">کد های تخفیف</h4>
                                 <div class="admin-panel-dataTable">
-                                    <div class="admin-panel-product__table-wrapper">
+                                    <div class="admin-panel-dataTable__table-wrapper">
                                         <div class="tabel-responsive">
-                                            <table class="admin-panel-product__table table">
+                                            <table class="admin-panel-dataTable__table table">
                                                 <thead>
                                                     <tr>
                                                         <th>شماره</th>
@@ -1238,7 +1238,7 @@
                                 <h4 class="admin-panel__subtitle">اضافه کردن مقاله جدید</h4>
                                 <form action="" class="admin-panel-articles__add-product-form">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-1" class="admin-panel__label">عنوان
                                                     مقاله</label>
@@ -1246,7 +1246,7 @@
                                                     class="admin-panel__input" id="admin-panel__input-1">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-sm-6 col-12">
                                             <div class="admin-panel__btn-group">
                                                 <label for="admin-panel__input-10" class="admin-panel__label">نام
                                                     نویسنده</label>
@@ -1274,9 +1274,9 @@
                             </div>
                             <div class="admin-panel-dataTable">
                                 <h4 class="admin-panel__subtitle">لیست محصولات</h4>
-                                <div class="admin-panel-product__table-wrapper">
+                                <div class="admin-panel-dataTable__table-wrapper">
                                     <div class="tabel-responsive">
-                                        <table class="admin-panel-product__table table">
+                                        <table class="admin-panel-dataTable__table table">
                                             <thead>
                                                 <tr>
                                                     <th>شماره</th>

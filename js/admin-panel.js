@@ -34,6 +34,7 @@ adminPanelSidebarShadow.addEventListener("click" , toggleSidebar)
 
 adminPanelSidebarLink.forEach(item=>{
   item.addEventListener("click",(event)=>{
+    adminPanelSidebar.classList.add("admin-panel-sidebar--close")
       adminPanelSidebarLink.forEach(item=>{
           item.classList.remove("admin-panel-sidebar__menu-link--active")
       })

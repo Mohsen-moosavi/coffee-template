@@ -13,6 +13,11 @@
     }
 
     /* end console page */
+
+    .admin-panel-dataTable{
+        width: calc(100vw - 31rem);
+        max-width: 100%;
+    }
     /* <==================== end admin-panel page ====================> */
 }
 
@@ -143,6 +148,12 @@
     }
 
     /* end console page */
+
+    /* start data-table */
+    .admin-panel-sidebar--close ~ .admin-panel__mainbar  .admin-panel-dataTable{
+        width: calc(100vw - 13rem);
+    }
+    /* end data-table */
 
     /* <==================== end admin-panel page ====================> */
 
@@ -342,6 +353,12 @@
     }
 
     /* main bar */
+
+        /* start data-table */
+        .admin-panel-dataTable{
+            width: 100% !important;
+        }
+        /* end data-table */
 
     /* <==================== end admin-panel page ====================> */
 
@@ -644,6 +661,14 @@
     /* <==================== end user-panel ====================> */
 
     /* <==================== start admin-panel ====================> */
+
+    .admin-panel-body{
+        margin: 1rem 0;
+    }
+    .admin-panel__mainbar {
+        padding: 1rem;
+    }
+
     /* start header */
     .admin-panel-header {
         padding-bottom: 0.5rem;
@@ -683,6 +708,21 @@
     }
 
     /* end console-page */
+
+    /* start form */
+    .admin-panel__form-btn-submit{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    /* end form */
+
+    /* start data-table */
+    .admin-panel-dataTable__table tr td,
+    .admin-panel-dataTable__table tr th {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    /* end data-table */
 
     /* <==================== end admin-panel ====================> */
 
